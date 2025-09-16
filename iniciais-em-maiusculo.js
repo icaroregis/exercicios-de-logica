@@ -12,4 +12,4 @@ Object.defineProperty(String.prototype, 'toJadenCase', {
   },
 });
 
-console.log('most trees are blue'.toJadenCase()); // returns 'Most Trees Are Blue'
+console.log('most trees are blue'.toJadenCase()); 
