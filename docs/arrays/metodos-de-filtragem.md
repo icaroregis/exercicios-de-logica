@@ -63,3 +63,72 @@ console.log(todosAdultos); // true
 - every: "Todos os brinquedos da caixa são vermelhos?"
 
 Esses métodos são muito usados para trabalhar com listas e fazer verificações rápidas!
+
+---
+
+## Outros métodos úteis para trabalhar com arrays
+
+### 4. forEach
+
+- O que faz?
+  O método `forEach` executa uma função para cada elemento do array, mas não retorna nada.
+- Como funciona?
+  Você passa uma função que será chamada para cada item do array. Usado para executar ações, como mostrar ou alterar valores.
+- Exemplo:
+
+```js
+let nomes = ['Ana', 'Bia', 'Carlos'];
+nomes.forEach((nome) => {
+  console.log('Olá, ' + nome + '!');
+});
+// Olá, Ana!
+// Olá, Bia!
+// Olá, Carlos!
+```
+
+---
+
+### 5. map
+
+- O que faz?
+  O método `map` cria um novo array com o resultado da função aplicada a cada elemento.
+- Como funciona?
+  Você passa uma função que transforma cada item. O resultado é um novo array com os valores modificados.
+- Exemplo:
+
+```js
+let numeros = [1, 2, 3];
+let dobrados = numeros.map((n) => n * 2);
+console.log(dobrados); // [2, 4, 6]
+```
+
+---
+
+### 6. for...of
+
+- O que faz?
+  O `for...of` é uma estrutura de repetição que percorre cada elemento do array.
+- Como funciona?
+  Você usa o `for...of` para acessar cada item do array, um por vez, de forma simples.
+- Exemplo:
+
+```js
+let cores = ['azul', 'verde', 'amarelo'];
+for (let cor of cores) {
+  console.log(cor);
+}
+// azul
+// verde
+// amarelo
+```
+
+---
+
+## Resumindo todos os métodos:
+
+- **filter**: devolve um novo array só com os elementos que passaram no teste.
+- **some**: devolve true se pelo menos um elemento passou no teste.
+- **every**: devolve true só se todos os elementos passaram no teste.
+- **forEach**: executa uma ação para cada item (não retorna nada).
+- **map**: transforma cada item e retorna um novo array.
+- **for...of**: percorre cada item do array, útil para ler ou mostrar valores.
