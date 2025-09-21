@@ -1,3 +1,4 @@
+//Retornar as iniciais do nome
 function abbrevName(name) {
   let validation = name
     .split(' ')
