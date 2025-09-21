@@ -69,9 +69,44 @@ console.log(texto.substring(0, 4)); // 'Java'
 
 ---
 
+## 5. endsWith
+
+- **O que faz?**  
+  Verifica se uma string termina com um determinado texto.
+- **Como usar:**
+```js
+let arquivo = 'documento.pdf';
+console.log(arquivo.endsWith('.pdf')); // true
+console.log(arquivo.endsWith('.jpg')); // false
+```
+- **Exemplos práticos:**
+```js
+let nome = 'JavaScript';
+console.log(nome.endsWith('Script')); // true
+console.log(nome.endsWith('Java')); // false
+
+let email = 'usuario@gmail.com';
+console.log(email.endsWith('@gmail.com')); // true
+console.log(email.endsWith('.br')); // false
+
+// Casos especiais:
+console.log('qualquer texto'.endsWith('')); // true (string vazia sempre retorna true)
+console.log(''.endsWith('algo')); // false (string vazia não termina com algo)
+```
+- **Dica importante:**  
+  O endsWith é sensível a maiúsculas e minúsculas (case-sensitive).
+```js
+let palavra = 'JavaScript';
+console.log(palavra.endsWith('script')); // false (s minúsculo)
+console.log(palavra.endsWith('Script')); // true (S maiúsculo)
+```
+
+---
+
 ## Resumo rápido:
 
 - **charAt**: "Quero pegar só uma letra!"
 - **slice**: "Quero cortar um pedaço da palavra!"
 - **split**: "Quero quebrar a frase em pedacinhos!"
 - **substring**: "Como o slice, mas só com números positivos!"
+- **endsWith**: "Essa palavra termina com isso que eu quero?"
