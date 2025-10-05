@@ -6,6 +6,9 @@ console.log('🚀 APRENDENDO SOBRE CLASSES EM JAVASCRIPT\n');
 // 1. DEFINIÇÃO BÁSICA DE CLASSE
 // =============================
 
+// diferença entre classes e instâncias:
+// Classes são moldes(formas) para criar objetos (instâncias).
+
 class Pessoa {
   // Construtor - método especial que é chamado quando criamos uma instância
   constructor(nome, idade) {
