@@ -14,7 +14,6 @@ function criarTarefa(dados) {
   return objetoRetorno;
 }
 
-// ---- Não mexa no código que está abaixo desta linha ----
 document.write(`
 <div style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
     <h2>App Lista de tarefas</h2>
