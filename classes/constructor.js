@@ -30,9 +30,11 @@ console.log('=======');
 
 // Definição da classe Receita com construtor e variáveis de instância
 class Receita {
-  constructor() {
-    this.tempoDeCozimento = 30;
-    this.alergias = ['nozes'];
+  //dentro dos parenteses do constructor chamamos de parâmetros do constructor
+  constructor(tempoDeCozimento, alergias) {
+    //dentro do constructor chamamos de atributos ou variáveis de instância
+    this.tempoDeCozimento = tempoDeCozimento;
+    this.alergias = alergias;
   }
 }
 
