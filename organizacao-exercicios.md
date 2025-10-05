@@ -82,6 +82,12 @@
 
 - `converter-valor-binario-em-inteiro.js` - Conversão binário para decimal
 
+## 🏗️ Programação Orientada a Objetos (Classes)
+📁 **Pasta:** `classes/`
+
+- `instanciando-classe-usuario.js` - Instanciação básica de classes
+- `explicacao-classes.js` - Guia completo sobre classes em JavaScript
+
 ## ⚛️ React (Avançado)
 📁 **Pasta:** `react/`
 
@@ -107,6 +113,7 @@
 - Filtros e transformações de arrays
 - Formatação complexa de strings
 - Loops com condicionais
+- **Classes e Programação Orientada a Objetos**
 
 ### 🔴 Avançado
 - Lista de tarefas (CRUD completo)
