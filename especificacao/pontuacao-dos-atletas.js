@@ -36,7 +36,8 @@ function pontuacaoDosAtletas(atletas) {
     let listDeNotas = [...maiores, ...menores, ...restantes];
 
     return console.log(
-      `Atleta: ${atleta.nome}, 
+      `
+      Atleta: ${atleta.nome}, 
       Notas Obtidas: ${listDeNotas},
       Média Válida: ${media.toFixed(2)}
       `,
