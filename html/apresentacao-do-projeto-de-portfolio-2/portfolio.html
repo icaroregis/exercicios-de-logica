@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Developer FullStack</title>
+    <link
+      rel="stylesheet"
+      href="styles.css" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="nav">
+          <div class="nav-logo">
+            <img
+              src="https://res.cloudinary.com/dbfn5lnvx/image/upload/v1648478885/learnhtmlcss/portfolio/logo.svg"
+              alt="Web developer logo"
+              width="45"
+              height="43" />
+          </div>
+          <ul class="nav-links">
+            <li>
+              <a
+                href="#about-me"
+                class="btn btn--nav"
+                >Sobre mim</a
+              >
+            </li>
+            <li>
+              <a
+                href="#portfolio"
+                class="btn btn--nav"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a
+                href="#experience"
+                class="btn btn--nav"
+                >Experiência</a
+              >
+            </li>
+            <li>
+              <a
+                href="#testimonials"
+                class="btn btn--nav"
+                >Depoimentos</a
+              >
+            </li>
+            <li>
+              <a
+                href="#hire-me"
+                class="btn btn--raised"
+                >Contrate-me</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button
+        id="toggle-theme"
+        aria-label="Toggle dark theme">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          enable-background="new 0 0 24 24"
+          height="24px"
+          viewBox="0 0 24 24"
+          width="24px"
+          fill="var(--light-icon)">
+          <rect
+            fill="none"
+            height="24"
+            width="24" />
+          <path
+            d="M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36c-0.98,1.37-2.58,2.26-4.4,2.26 c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z" />
+        </svg>
+      </button>
+    </nav>
+    <main>
+      <section
+        id="intro"
+        class="layout-section"
+        aria-describedby="intro-h1 intro-h2">
+        <div class="container">
+          <h1
+            id="intro-h1"
+            class="title--lg intro-name">
+            Jonas Habib
+          </h1>
+          <h2
+            id="intro-h2"
+            class="title--lg intro-tagline">
+            Desenvolvedor Web
+          </h2>
+          <p class="text--xl">Jonas é um desenvolvedor FullStack do Brasil.</p>
+        </div>
+      </section>
+
+      <section
+        id="about-me"
+        class="layout-section"
+        aria-labelledby="heading-aboutme">
+        <div class="container">
+          <h2
+            id="heading-aboutme"
+            class="title--sm layout-section-title">
+            Sobre mim
+          </h2>
+          <div class="layout-grid-half">
+            <div>
+              <p class="text--lg">
+                Jonas estudou ciência da computação e multimídia na Uninove. 10 anos de experiência deram a Jonas uma
+                experiência única para abordar projetos de clientes.
+              </p>
+              <p class="text--lg">
+                Jonas trabalha principalmente com startups e as aconselha sobre as melhores tecnologia para seus
+                projetos.
+              </p>
+            </div>
+            <div>
+              <p class="text--lg">
+                Jonas ajuda você a dar vida à sua visão com atenção aos detalhes e foco estrito na qualidade.
+              </p>
+
+              <p class="text--lg">
+                Curioso para saber mais? Confira meu
+                <a href="#portfolio">portfolio</a> or
+                <a href="#hire-me">contrate-me</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="portfolio"
+        class="layout-section"
+        aria-labelledby="heading-portfolio">
+        <div class="container">
+          <h2
+            id="heading-portfolio"
+            class="title--sm layout-section-title">
+            Portfolio
+          </h2>
+          <div class="portfolio">
+            <img
+              src="https://res.cloudinary.com/dbfn5lnvx/image/upload/v1648478885/learnhtmlcss/portfolio/project-1.jpg"
+              width="300"
+              height="300"
+              alt="Stocks web app"
+              class="portfolio-screenshot" />
+            <div>
+              <h3 class="title">Site de ações</h3>
+              <p class="text">
+                Trabalhei com um cliente nos Estados Unidos em um aplicativo Web de ações com tema escuro. O aplicativo
+                web é acessível e tem um desempenho incrível em dispositivos móveis de entrada.
+              </p>
+              <a
+                href="https://example.com"
+                class="btn btn--link"
+                target="_blank"
+                >Visite</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="side">
+            <img
+              src="https://res.cloudinary.com/dbfn5lnvx/image/upload/v1648478885/learnhtmlcss/portfolio/logo.svg"
+              alt="Web developer logo"
+              width="45"
+              height="43" />
+            <div>
+              <p class="text--bold footer-name">&copy; 2023 Jonas</p>
+              <p class="text--sm footer-rights">Todos direitos reservados.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
