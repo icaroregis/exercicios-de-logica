@@ -1,3 +1,21 @@
+### `<i>`
+
+Exibe o texto em itálico, mas sem indicar ênfase semântica. Usado para termos estrangeiros, nomes científicos, citações, etc.
+
+**Exemplo 1:**
+
+```html
+<p>O projeto tem um <i lang="en">briefing</i> que precisa ser seguido.</p>
+```
+
+**Exemplo 2:**
+
+```html
+<p>Nome científico: <i>Homo sapiens</i></p>
+```
+
+---
+
 ## Documentação de Tags HTML: b, strong, em, span, h1-h5
 
 ### `<b>`
@@ -103,8 +121,10 @@ Usadas para títulos e subtítulos, com hierarquia de importância (h1 = mais im
 
 ---
 
-### Diferença entre `<em>`, `<span>` e família `<h1>`-`<h5>`
+### Diferença entre `<em>`, `<strong>`, `<i>`, `<span>` e família `<h1>`-`<h5>`
 
 - `<em>`: ênfase semântica (itálico).
+- `<strong>`: ênfase semântica (negrito, indica importância).
+- `<i>`: itálico visual, sem ênfase semântica (usado para termos estrangeiros, nomes científicos, etc).
 - `<span>`: agrupamento/estilização, sem semântica.
 - `<h1>`-`<h5>`: títulos e estrutura do documento, com semântica e hierarquia.
