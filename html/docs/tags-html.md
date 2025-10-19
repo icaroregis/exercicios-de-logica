@@ -124,7 +124,21 @@ Usadas para títulos e subtítulos, com hierarquia de importância (h1 = mais im
 ### Diferença entre `<em>`, `<strong>`, `<i>`, `<span>` e família `<h1>`-`<h5>`
 
 - `<em>`: ênfase semântica (itálico).
-- `<strong>`: ênfase semântica (negrito, indica importância).
 - `<i>`: itálico visual, sem ênfase semântica (usado para termos estrangeiros, nomes científicos, etc).
+- `<strong>`: ênfase semântica (negrito, indica importância).
 - `<span>`: agrupamento/estilização, sem semântica.
 - `<h1>`-`<h5>`: títulos e estrutura do documento, com semântica e hierarquia.
+
+---
+
+### Diferença entre `<strong>` e `<span>`
+
+- `<strong>`: Aplica negrito e indica importância semântica ao texto. Usado para destacar informações relevantes, sendo reconhecido por leitores de tela e mecanismos de busca.
+- `<span>`: Não tem significado semântico, serve apenas para agrupar ou estilizar partes do texto com CSS ou JavaScript. Não altera o significado do conteúdo para acessibilidade ou SEO.
+
+**Exemplo:**
+
+```html
+<p><strong>Atenção!</strong> Este campo é obrigatório.</p>
+<p>Olá, <span class="destaque">usuário</span>!</p>
+```
