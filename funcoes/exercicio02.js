@@ -19,7 +19,7 @@
 // Você consegue fazer 0 grupos
 // Sobram 2 maçãs
 
-let numberOfDays = 30;
+let numberOfDays = 365;
 
 function totalMoney(numberOfDays) {
   let numberOfDaysOfTheWeek = 7;
