@@ -17,3 +17,5 @@
 
 // ! Funcionamento básico de um algoritmo:
 // ! Entrada > processamento > saída
+
+// A linguagem de programação é a forma como os algoritmos são expressos para que possam ser entendidos e executados por computadores. Diferentes linguagens de programação possuem sintaxes e estruturas variadas, mas todas elas permitem a criação de algoritmos para resolver problemas específicos. Elas são traduzidas em código de máquina (Números binários) que o computador pode interpretar e executar.
