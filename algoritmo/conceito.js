@@ -14,3 +14,6 @@
 // ? - Algoritmos de busca: Métodos para encontrar informações em bancos de dados ou na internet.
 
 // ? Em resumo, algoritmos são essenciais para a resolução de problemas e automação de tarefas em diversas áreas, especialmente na ciência da computação.
+
+// ! Funcionamento básico de um algoritmo:
+// ! Entrada > processamento > saída
