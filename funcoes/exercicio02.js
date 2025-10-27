@@ -19,6 +19,18 @@
 // Você consegue fazer 0 grupos
 // Sobram 2 maçãs
 
+// exemplos
+// A lógica é universal:
+// Quando o dividendo é MENOR que o divisor:
+// 2 % 7 = 2  // 7 não cabe em 2, sobra 2
+// 3 % 7 = 3  // 7 não cabe em 3, sobra 3
+// 5 % 7 = 5  // 7 não cabe em 5, sobra 5
+// 8 % 7 = 1  // 7 cabe 1 vez em 8, sobra 1
+// 15 % 7 = 1 // 7 cabe 2 vezes em 15, sobra 1
+// 100 % 7 = 2 // 7 cabe 14 vezes em 100, sobra 2
+// 7 % 7 = 0  // 7 cabe exatamente 1 vez, não sobra nada
+// 14 % 7 = 0 // 7 cabe exatamente 2 vezes, não sobra nada
+
 let numberOfDays = 365;
 
 function totalMoney(numberOfDays) {
