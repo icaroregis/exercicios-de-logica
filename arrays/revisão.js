@@ -27,3 +27,15 @@ console.log(planetsTwo); // Prints: ["Mercury", "Venus", "Earth", "Mars", "Pluto
 const pluto = planetsTwo.pop();
 console.log(pluto); // Prints: "Pluto"
 console.log(planetsTwo); // Prints: ["Mercury", "Venus", "Earth", "Mars"]
+
+// Define a list of celestial objects in our solar system with some planets and the Sun
+const celestialObjects = ['Sun', 'Mercury', 'Venus', 'Earth'];
+
+// Display the number of celestial objects
+console.log('We have ' + celestialObjects.length + ' celestial objects in our list.');
+
+// Add a new celestial object 'Moon' that orbits the Earth
+celestialObjects.push('Moon');
+
+// Display the updated list of celestial objects
+console.log('Our updated list of celestial objects:', celestialObjects);
