@@ -39,3 +39,31 @@ celestialObjects.push('Moon');
 
 // Display the updated list of celestial objects
 console.log('Our updated list of celestial objects:', celestialObjects);
+
+// Operações de lista em JavaScript
+// Listas (ou arrays) em JavaScript vêm com uma variedade de métodos poderosos para manipulação de listas. Aqui está uma lista dos mais usados:
+
+// ! indexOf(element): Retorna o primeiro índice de ocorrência do elemento especificado.
+
+// ! reverse()- Inverte a lista, ou seja, altera a ordem dos seus elementos para que sejam do final.
+
+// ! splice(index, deleteCount, itemsToInsert): Altera o conteúdo de uma matriz removendo deleteCountelementos, começando em index, e adicionando novos itemsToInsertelementos em vez deles.
+// ! Este método é bastante avançado. No entanto, ele pode ser usado para inserir o elemento em uma posição específica - veja o exemplo abaixo!
+
+let fruits = ['apple', 'banana', 'cherry'];
+
+// Inserting an element 'avocado' at position 1 using .splice()
+fruits.splice(1, 0, 'avocado');
+console.log(fruits); // Output: ['apple', 'avocado', 'banana', 'cherry']
+
+// Inserting an element 'orange' at position 4 using .splice()
+fruits.splice(4, 0, 'orange');
+console.log(fruits); // Output: ['apple', 'avocado', 'banana', 'cherry', 'orange']
+
+// Finding the index of an element using .indexOf()
+let index = fruits.indexOf('banana');
+console.log(index); // Output: 2
+
+// Reverse the fruits list
+fruits.reverse();
+console.log(fruits); // Output: ['orange', 'cherry', 'banana', 'avocado', 'apple']
