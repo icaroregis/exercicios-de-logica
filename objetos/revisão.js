@@ -9,7 +9,7 @@ let car = {
 console.log('color' in car); // Outputs: true
 console.log('mileage' in car); // Outputs: false
 
-// Neste exemplo, inspecionamos se as chaves 'color'e 'mileage'estão no carobjeto. As saídas esperadas são truee false, respectivamente, já que o carobjeto contém a 'color'chave, mas não a 'mileage'chave.
+// Neste exemplo, inspecionamos se as chaves 'color'e 'mileage'estão no carro objeto. As saídas esperadas são true e false, respectivamente, já que o carro objeto contém a 'color'chave, mas não a 'mileage'chave.
 
 // Para excluir propriedades de objetos, use a 'delete' palavra-chave, conforme mostrado neste exemplo:
 
@@ -18,7 +18,7 @@ console.log(car); // Outputs: {color: "blue", model: "sedan", manufacturer: "Toy
 console.log(car.propellant); // Outputs: undefined
 console.log('propellant' in car); // Outputs: false
 
-// Com a deletepalavra-chave, o par chave-valor desaparece completamente.
+// Com a delete palavra-chave, o par chave-valor desaparece completamente.
 
 // JavaScript fornece vários métodos poderosos para interagir com objetos. Os principais entre eles são Object.keys(), Object.values(), e Object.entries(), que retornam matrizes de chaves, valores e pares chave-valor de um objeto, respectivamente.
 
