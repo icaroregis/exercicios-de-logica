@@ -11,7 +11,7 @@ function calcularMedia(nota1, nota2, nota3, nota4) {
   if (media >= 6) {
     return `Sua média é: ${media.toFixed(2)}. Parabéns! Você foi aprovado.`;
   } else {
-    return 'Você foi reprovado.';
+    return `Você foi reprovado. ${media.toFixed(2)} é menor que 6.`;
   }
 }
 
