@@ -4,7 +4,7 @@ function calcularNovoSalario(salarioAtual, percentualAumento) {
   const novoSalario = salarioAtual + (salarioAtual * percentualAumento) / 100;
   return `Salário atual: R$ ${salarioAtual.toFixed(
     2,
-  )}. Com um aumento de ${percentualAumento}%, o novo salário será R$ ${novoSalario.toFixed(2)}.`;
+  )}. Com um aumento de ${percentualAumento}%, o novo salário será R$ ${novoSalario.toFixed(2)}`;
 }
 
 const salarioAtual = parseFloat(readline.question('Digite o salário atual: '));
