@@ -1,6 +1,5 @@
-const cosmicObjects = new Map(); // Create a JavaScript object
-cosmicObjects.set('Earth', 'Third planet from the Sun');
-cosmicObjects.set('Venus', 'Second planet from the Sun');
+const cosmicMap = new Map();
+const earthCoordinates = { x: 0, y: 0, z: 0 }; // Complex object key representing Earth's location
 
-console.log(cosmicObjects.has('Earth')); // Output: true
-console.log(cosmicObjects.get('Earth')); // Output: Third planet from the Sun
+cosmicMap.set(earthCoordinates, 'Home planet'); // Adding a complex key-value pair to our Map
+console.log(cosmicMap.get(earthCoordinates)); // Retrieving the description for Earth
