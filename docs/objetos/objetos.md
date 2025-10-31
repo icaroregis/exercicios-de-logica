@@ -20,6 +20,14 @@ Map(3) {1234: "Numerical Planet", true: "Boolean Planet", "Star Destroyer": "Dea
 */
 ```
 
+O get método retorna um valor undefined para chaves ausentes. No entanto, você pode usar um operador condicional para fornecer um valor padrão nessas situações:
+
+```js
+let spacecraft = 'Voyager';
+// If 'Voyager' exists on our Map, get its destination. Otherwise, print 'Unknown destination'
+console.log(spacecrafts.has(spacecraft) ? spacecrafts.get(spacecraft) : 'Unknown destination'); // Output: Unknown destination
+```
+
 Vamos começar com os Conjuntos (Sets ). Em JavaScript, um Conjunto é um tipo único de objeto que armazena vários tipos de dados, sejam eles primitivos ou objetos. Um Conjunto não contém duplicatas. Pense em um Conjunto como uma bolsa cósmica que contém corpos celestes (elementos), garantindo que cada um permaneça único.
 
 Aqui está um exemplo de como criar e usar um Conjunto em JavaScript:
