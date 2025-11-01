@@ -123,3 +123,64 @@ Eating fruit at position: 7
 Eating fruit at position: 8
 Eating fruit at position: 9
 */
+
+let chapter = 1;
+
+while (chapter <= 10) {
+  if (chapter === 5) {
+    // We've reached chapter 5.
+    chapter++; // Increment before skipping.
+    continue; // SKIP! Let's move on to chapter 6.
+  }
+  console.log('Reading chapter:', chapter);
+  chapter++; // Increment after processing.
+}
+/*
+Prints:
+Reading chapter: 1
+Reading chapter: 2
+Reading chapter: 3
+Reading chapter: 4
+Reading chapter: 6
+Reading chapter: 7
+Reading chapter: 8
+Reading chapter: 9
+Reading chapter: 10
+*/
+
+let photo = 0;
+
+while (photo < 100) {
+  photo++;
+  if (photo === 23) {
+    // We've found our desired photo.
+    console.log('Found the photo at position', photo);
+    break; // STOP! We've got our photo. No need to scroll further.
+  }
+}
+
+// Dominando Loops Aninhados — Interromper e Continuar
+// Lembra das bonecas russas? Imagine caixas encaixadas umas dentro das outras com um bilhete escondido dentro. O break comando ajuda a encerrar o ciclo assim que o bilhete for encontrado:
+
+for (let bonecaExterna = 0; bonecaExterna < 3; bonecaExterna++) {
+  for (let bonecaInterna = 0; bonecaInterna < 3; bonecaInterna++) {
+    if (bonecaExterna === 1 && bonecaInterna === 1) {
+      // Encontramos a nota em uma boneca interna alojada por uma boneca externa.
+      console.log('Encontramos a nota na boneca externa', bonecaExterna, 'e na boneca interna', bonecaInterna);
+      break; // PARE! Encontramos a nota. Não há necessidade de descobrir mais bonecas.
+      // A instrução break encerra a execução apenas do loop interno, o loop externo continua
+    }
+    console.log('Procurando na boneca externa', bonecaExterna, 'e na boneca interna', bonecaInterna);
+  }
+}
+/*
+Imprime:
+Procurando na boneca externa 0 e na boneca interna 0
+Procurando na boneca externa 0 e na boneca interna 1
+Pesquisando na boneca externa 0 e na boneca interna 2
+Pesquisando na boneca externa 1 e na boneca interna 0
+Encontramos a nota na boneca externa 1 e na boneca interna 1
+Pesquisando na boneca externa 2 e na boneca interna 0
+Pesquisando na boneca externa 2 e na boneca interna 1
+Pesquisando na boneca externa 2 e na boneca interna 2
+*/
