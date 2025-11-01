@@ -100,3 +100,26 @@ No treasure at position: 3
 No treasure at position: 4
 Treasure found at position 5
 */
+
+// Controlando um único laço 'for' — A instrução continue
+// O continue comando ignora a iteração atual do loop e pula para a próxima. Imagine comer frutas de uma cesta e decidir pular uma maçã. É exatamente isso que o continue comando faz. Veja como:
+
+for (let i = 0; i < 10; i++) {
+  if (i === 5) {
+    // Position 5 is where the apple is.
+    continue; // SKIP! No apple for me, thank you. Onto the next fruit!
+  }
+  console.log('Eating fruit at position:', i);
+}
+/*
+Prints:
+Eating fruit at position: 0
+Eating fruit at position: 1
+Eating fruit at position: 2
+Eating fruit at position: 3
+Eating fruit at position: 4
+Eating fruit at position: 6
+Eating fruit at position: 7
+Eating fruit at position: 8
+Eating fruit at position: 9
+*/
