@@ -78,3 +78,25 @@ for (let i = 1; i <= 5; i++) {
 // 1 2 3
 // 1 2 3 4
 // 1 2 3 4 5
+
+// Controle total de um único laço 'for' — A instrução break
+// Lembra do for loop? Sua iteração continua até que uma condição seja satisfeita. Vamos conhecer um novo amigo — break. Uma vez encontrado, o loop para, não importa o quê!
+
+// Para entender melhor, vamos pensar em uma caça ao tesouro, onde cada caixa representa uma iteração do loop. Abrir uma caixa executa o loop, e encontrar o tesouro (break) interrompe a sequência de aberturas. Veja como isso funciona em JavaScript:
+
+for (let i = 0; i <= 10; i++) {
+  if (i === 5) {
+    console.log('Treasure found at position', i); // Our treasure is at the position 5.
+    break; // STOP! We got the treasure. No need to continue opening more boxes.
+  }
+  console.log('No treasure at position:', i);
+}
+/*
+Prints:
+No treasure at position: 0
+No treasure at position: 1
+No treasure at position: 2
+No treasure at position: 3
+No treasure at position: 4
+Treasure found at position 5
+*/
