@@ -37,3 +37,27 @@ i = 2 , j = 0
 i = 2 , j = 1
 i = 2 , j = 2
 */
+
+// Vamos analisar alguns exemplos de loops aninhados. Considere a tarefa de iterar sobre uma matriz bidimensional (2D), que é uma matriz de matrizes:
+
+let matrix = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+];
+
+for (let i = 0; i < matrix.length; i++) {
+  // Going through each row.
+  let row = '';
+  for (let j = 0; j < matrix[i].length; j++) {
+    // Going through each element in the row.
+    row += matrix[i][j] + ' '; // implicit conversion of matrix[i][j] to string
+  }
+  console.log(row);
+}
+/*
+Prints:
+1 2 3
+4 5 6
+7 8 9
+*/
