@@ -110,3 +110,28 @@ Savings: 40
 Savings: 50
 */
 ```
+
+Estrutura de um laço 'for' aninhado em JavaScript
+Vamos decifrar a estrutura de um for loop aninhado em JavaScript:
+
+```js
+for (let i = 0; i < 3; i++) {
+  for (let j = 0; j < 3; j++) {
+    console.log('i =', i, ', j =', j); // e.g., "i = 0 , j = 0"
+  }
+}
+/*
+Prints:
+i = 0 , j = 0
+i = 0 , j = 1
+i = 0 , j = 2
+i = 1 , j = 0
+i = 1 , j = 1
+i = 1 , j = 2
+i = 2 , j = 0
+i = 2 , j = 1
+i = 2 , j = 2
+*/
+```
+
+Aqui, temos dois loops for: o loop externo (com a variável i) e o loop interno (com a variável j). Para cada valor de i, o loop interno executa completamente, iterando j de 0 a 2. Isso resulta em uma combinação de todos os valores possíveis de i e j.
