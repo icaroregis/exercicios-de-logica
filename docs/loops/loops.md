@@ -82,3 +82,31 @@ Neptune
 ```
 
 Aqui, planet percorre todos os elementos em planets, imprimindo cada um. Observe que, ao usar for-of, você não precisa de um índice na lista - você itera pelos próprios elementos da lista.
+
+Condições compostas com laços while
+whileEm JavaScript, os loops podem usar condições compostas com o uso de &&`and` ou ||`or`. Considere este código, onde você está economizando dinheiro para comprar uma bicicleta e o loop para se você atingir a meta ou quando o inverno começar:
+
+```js
+let savings = 0; // Starts with 0 savings
+let isWinter = false; // Starts when it's not winter
+
+while (savings < 100 && !isWinter) {
+  // As long as savings is less than 100 and it's not winter
+  savings += 10; // Save 10 more
+  console.log('Savings:', savings);
+
+  // Simulate the changing of seasons
+  if (savings === 50) {
+    // When savings is 50, winter begins
+    isWinter = true;
+  }
+}
+/*
+Prints:
+Savings: 10
+Savings: 20
+Savings: 30
+Savings: 40
+Savings: 50
+*/
+```
