@@ -61,3 +61,20 @@ Prints:
 4 5 6
 7 8 9
 */
+
+// Outro for exemplo de laço aninhado cria uma pirâmide numérica:
+for (let i = 1; i <= 5; i++) {
+  // First loop denotes each level of the pyramid.
+  let row = '';
+  for (let j = 1; j <= i; j++) {
+    // Second loop adds numbers to each level.
+    row += j + ' '; // j + ' ' does implicit type conversion to string
+  }
+  console.log(row); // Prints each level of the pyramid.
+}
+
+// 1
+// 1 2
+// 1 2 3
+// 1 2 3 4
+// 1 2 3 4 5
