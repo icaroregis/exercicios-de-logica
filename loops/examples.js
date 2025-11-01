@@ -184,3 +184,5 @@ Pesquisando na boneca externa 2 e na boneca interna 0
 Pesquisando na boneca externa 2 e na boneca interna 1
 Pesquisando na boneca externa 2 e na boneca interna 2
 */
+
+// Como você pode ver, quando encontramos a anotação para bonecaExterna = 1, o loop interno não continuou sua execução. No entanto, o loop para bonecaExterna = 2 foi executado normalmente, break saindo apenas do loop interno.
