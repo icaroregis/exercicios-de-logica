@@ -8,6 +8,7 @@ try {
 } catch (error) {
   console.log('Não é possível processar os dados da missão:', error);
 } finally {
+  // ! O finally é executado independentemente de haver ou não um erro
   if (missionDataProcessed) {
     console.log('Dados da missão processados. Pronto para a decolagem!');
   } else {
