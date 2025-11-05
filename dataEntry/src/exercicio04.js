@@ -1,7 +1,5 @@
 import readline from 'readline-sync';
 
-const vogal = readline.question('Digite uma vogal: ').toLowerCase().trim();
-
 function verificarVogal(vogal) {
   let vogaisValidas = ['a', 'e', 'i', 'o', 'u'];
   if (vogaisValidas.includes(vogal)) {
@@ -11,4 +9,5 @@ function verificarVogal(vogal) {
   }
 }
 
+const vogal = readline.question('Digite uma vogal: ').toLowerCase().trim();
 console.log(verificarVogal(vogal));

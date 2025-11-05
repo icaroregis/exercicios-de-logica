@@ -6,10 +6,6 @@
 
 import readline from 'readline-sync';
 
-const numberOne = parseFloat(readline.question('Digite o primeiro número: '));
-const numberTwo = parseFloat(readline.question('Digite o segundo número: '));
-const operation = readline.question('Digite a operação desejada (+, -, x, /): ');
-
 function calculate(numberOne, numberTwo, operation) {
   let result;
 
@@ -36,5 +32,9 @@ function calculate(numberOne, numberTwo, operation) {
 
   return `O resultado de ${numberOne} ${operation} ${numberTwo} é: ${result}`;
 }
+
+const numberOne = parseFloat(readline.question('Digite o primeiro número: '));
+const numberTwo = parseFloat(readline.question('Digite o segundo número: '));
+const operation = readline.question('Digite a operação desejada (+, -, x, /): ');
 
 console.log(calculate(numberOne, numberTwo, operation));
