@@ -13,3 +13,35 @@ This is an escape character lesson:
 */
 
 // Neste exemplo, "\n"uma nova linha é inserida, e "\t"uma tabulação é inserida, resultando em uma saída organizada. Pode parecer complicado, mas fique à vontade para me pedir ajuda; terei prazer em esclarecer qualquer dúvida!
+
+
+// Às vezes, precisamos incluir caracteres especiais, como o próprio caractere de escape, em uma string. Para fazer isso, precedemos esses caracteres especiais com uma barra invertida (\ \), efetivamente escapando-os.
+
+let phrase = "She said, \"Hey, it\'s a \\ \".";
+console.log(phrase);  // Outputs: She said, "Hey, it's a \ ".
+
+
+// Neste exemplo, escapamos uma aspa dupla (" \"), uma aspa simples ( \'") e uma barra invertida (" \\) em uma string.
+
+
+// Caracteres de nova linha e de escape de tabulação também podem ser usados, embora as strings de modelo também permitam strings de várias linhas diretamente!
+
+const testMessage = "Test message";
+
+console.log(`This supports\n\t- New lines\n\t- Tabs`);  // Supports new lines and tabs
+// Prints:
+// This supports
+//	- New lines
+//	- Tabs
+
+console.log(`This supports
+\t- New lines
+\t- Tabs
+\t- And expressions, as before: ${testMessage}`); // Also supports multi-line strings
+// Prints:
+//This supports
+//	- New lines
+//	- Tabs
+//	- And expressions, as before: Test message
+
+// Assim, os caracteres de escape se misturam perfeitamente com as cadeias de modelo para formar expressões de cadeia complexas.
