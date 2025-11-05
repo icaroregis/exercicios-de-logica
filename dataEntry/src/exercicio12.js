@@ -19,7 +19,9 @@
 import readline from 'readline-sync';
 
 function classificarTriangulo(ladoA, ladoB, ladoC) {
-  if (ladoA + ladoB <= ladoC || ladoA + ladoC <= ladoB || ladoB + ladoC <= ladoA) {
+  if (ladoA <= 0 || ladoB <= 0 || ladoC <= 0) {
+    return 'Lados devem ser maiores que zero.';
+  } else if (ladoA + ladoB <= ladoC || ladoA + ladoC <= ladoB || ladoB + ladoC <= ladoA) {
     return 'Não é um triângulo válido.';
   } else if (ladoA === ladoB && ladoB === ladoC) {
     return 'Triângulo Equilátero.';
