@@ -10,7 +10,8 @@ function formatString(message) {
     .replaceAll('LADRÃO', 'MAL-CARÁTER')
     .replaceAll('EMPRESAX', 'RAZÃO SOCIAL')
     .replaceAll(/\b\d{3}\.\d{3}\.\d{3}-\d{2}\b/g, 'DADO PESSOAL')
-    .toLowerCase();
+    .toLowerCase()
+    .replaceAll(/(\. ?)([a-z])/g, (_match, p1, p2) => `${p1}${p2.toUpperCase()}`);
 
   return `${formattedMessage.charAt(0).toUpperCase()}${formattedMessage.slice(1)}`;
 }
