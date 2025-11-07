@@ -26,3 +26,18 @@ console.log(characterArray);
 // Outputs: ['H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd', '!']
 
 // Como você deve imaginar, é como desmontar o colar em contas individuais!
+
+// ! O join() método é a antítese de split(). Ele une os elementos de um array em uma única string. A sintaxe é a seguinte:
+
+let newSeparator = '...';
+let combinedString = stringArray.join(newSeparator);
+
+// ! Se nenhum valor separator for fornecido, os elementos serão unidos por uma vírgula ( ,). Vamos revisitar nosso words array:
+
+let newWords = ['Hello', 'World!', 'What', 'a', 'wonderful', 'day', 'out', 'there!'];
+let originalString = newWords.join(' ');
+console.log(originalString);
+// Outputs: Hello World! What a wonderful day out there!
+
+console.log(words.join());
+// Outputs: Hello,World!,What,a,wonderful,day,out,there!
