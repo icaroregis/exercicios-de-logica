@@ -61,3 +61,5 @@ console.log(reversedWords);
 let reversedSentence = reversedWords.join(' ');
 console.log(reversedSentence);
 // Outputs: "strings. JavaScript of universe the exploring are We"
+
+// * Com apenas alguns passos, invertemos a ordem das palavras na frase!
