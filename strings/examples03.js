@@ -41,3 +41,23 @@ console.log(originalString);
 
 console.log(words.join());
 // Outputs: Hello,World!,What,a,wonderful,day,out,there!
+
+// ! Separadores alternativos produzem resultados variáveis:
+let list = words.join(', ');
+console.log(list);
+// Outputs: Hello, World!, What, a, wonderful, day, out, there!
+
+// * split() e join() podem colaborar para manipular dados de texto. Por exemplo, que tal inverter a ordem das palavras?
+
+let sentence = 'We are exploring the universe of JavaScript strings.';
+let newWordsTwo = sentence.split(' ');
+console.log(newWordsTwo);
+// Outputs: ["We", "are", "exploring", "the", "universe", "of", "JavaScript", "strings."]
+
+let reversedWords = newWordsTwo.reverse(); // Reverses a list of words
+console.log(reversedWords);
+// Outputs: ["strings.", "JavaScript", "of", "universe", "the", "exploring", "are", "We"]
+
+let reversedSentence = reversedWords.join(' ');
+console.log(reversedSentence);
+// Outputs: "strings. JavaScript of universe the exploring are We"
