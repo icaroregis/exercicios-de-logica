@@ -1,0 +1,67 @@
+<!-- 📘 Shorthands de padding e margin
+
+As propriedades padding e margin são chamadas de propriedades shorthand.
+
+Por exemplo, a declaração padding: 20px define automaticamente 4 propriedades:
+
+padding-top: 20px
+padding-right: 20px
+padding-bottom: 20px
+padding-left: 20px
+É por isso que ela é chamada de shorthand, que significa "abreviada". Geralmente, as declarações shorthand economizam seu tempo. Portanto, padding: 20px é equivalente a definir as 4 propriedades acima com o mesmo valor.
+
+O mesmo conceito se aplica às margens. Você poderá praticar isso nos próximos exercícios.
+
+📘 Visualização com as DevTools
+
+Você pode usar as DevTools para visualizar uma propriedade shorthand. Clique na seta ao lado das propriedades shorthands (por exemplo, padding e margin). Ela se expandirá para todas as propriedades definidas automaticamente, conforme mostrado na captura de tela abaixo.
+
+
+
+📘 Abreviação por valores
+
+Até agora, usamos apenas a propriedade shorthand para definir o mesmo valor para todas as direções. Se você não deseja configurar o mesmo valor para as quatro direções, pode escrever os valores separadamente. Por exemplo:
+
+.item {
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+}
+Ou então, use a propriedade shorthand padding e liste os quatro valores diferentes no sentido horário, começando do topo:
+
+/* Equivalente aos valores
+ * de padding do exemplo anterior */
+.item {
+    padding: 10px 15px 5px 20px;
+}
+* Sempre, em CSS, você deve seguir esta ordem:
+
+* top (topo)
+* right (direita)
+* bottom (baixo)
+* left (esquerda)
+É essencial memorizar esta ordem. Ela começa pela propriedade top e segue no sentido horário.
+
+📘 Especificando dois valores
+
+! Também é possível especificar dois valores. Por exemplo:
+
+! .item {
+!    padding: 20px 10px;
+! }
+! Nesse caso, você deve pensar nisso como dois eixos (em um gráfico): vertical e horizontal.
+
+! Portanto, o preenchimento interno vertical será de 20px e o preenchimento interno horizontal será de 10px.
+
+* Assim, padding: 20px 10px é equivalente a:
+
+* .item {
+*    /* eixo vertical */
+*    padding-top: 20px;
+*    padding-bottom: 20px;
+*
+*    /* eixo horizontal */
+*    padding-right: 10px;
+*    padding-left: 10px;
+* } -->
