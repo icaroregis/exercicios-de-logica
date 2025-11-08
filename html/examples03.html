@@ -1,0 +1,70 @@
+<!-- 📘 Margens colapsadas
+
+As margens verticais dos elementos adjacentes colapsam, ou seja, "se recolhem". Para entender o que isso significa, vamos dar uma olhada neste exemplo:
+
+<p>Primeiro parágrafo</p>
+<p>Segundo parágrafo</p>
+<style>
+    p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+</style>
+Primeiro parágrafo
+
+Segundo parágrafo
+
+Esses dois parágrafos têm uma margem superior de 20px e uma margem inferior de 20px. Então, você esperaria que eles fossem separados por 20+20 pixels, ou seja, 40 pixels, certo? No entanto, esse não é o caso. Eles são separados apenas por 20 pixels.
+
+Isso é o que queremos dizer com margens colapsadas.
+
+📘 As margens colapsam somente na vertical
+
+Somente margens verticais colapsam. Mas por quê?
+
+A maneira mais fácil de entender isso é pensar nas margens da seguinte maneira:
+
+Digamos que temos uma margem de 10px. Em vez de pensar: "mova isso 10 pixels", melhor pensar assim: "deve haver pelo menos 10 pixels de separação entre os elementos".
+
+Se um item adjacente também tiver uma margem definida, as margens verticais serão colapsadas, de forma que a maior margem seja aplicada. Por exemplo:
+
+<p id="primeiro">Primeiro parágrafo</p>
+<p id="segundo">Segundo parágrafo</p>
+<style>
+    #primeiro {
+        margin-bottom: 20px;
+    }
+    
+    #segundo {
+        margin-top: 40px;
+    }
+</style>
+Primeiro parágrafo
+
+Segundo parágrafo
+
+Há uma margem de 40px entre esses dois parágrafos (que você pode verificar usando as DevTools). A margem maior é aplicada quando as duas margens são colapsadas.
+
+📘 Por que as margens colapsam?
+
+Embora isso possa parecer contra-intuitivo a princípio, colapsar as margens facilitará sua vida, pois você pode aplicar margens sem se preocupar com as margens dos elementos adjacentes. Se as margens não fossem colapsadas, você precisaria ajustar as margens dos elementos adjacentes toda vez que mudasse as margens do elemento atual.
+
+Lembre-se de que apenas as margens verticais adjacentes colapsam. Nesse contexto, o que consideramos "adjacente" depende da existência de altura ou margem vertical no elemento separador.
+
+Vejamos um exemplo:
+
+<p>Primeiro parágrafo</p>
+<br>
+<p>Segundo parágrafo</p>
+<style>
+    p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+</style>
+Primeiro parágrafo
+
+
+Segundo parágrafo
+
+Observe que, quando adicionamos um <br> entre os dois parágrafos, as margens param de colapsar. Isso acontece porque os dois parágrafos não são mais adjacentes. -->
