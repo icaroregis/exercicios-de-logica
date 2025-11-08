@@ -1,0 +1,45 @@
+<!--  Aprendemos anteriormente que, no caso de dois seletores com a mesma declaração CSS, o que vem depois substituiria o anterior.
+
+No entanto, você notará que este não parece ser o caso na página ao lado.
+
+Observe como os jogadores são estilizados em azul em vez de verde, mesmo que a instrução color: blue tenha sido definida no CSS antes de color: green.
+
+A razão esse comportamento é que li.jogador tem uma especificidade maior que .jogador, ou seja:
+
+li.jogador ➡️ mais específico
+.jogador ➡️ menos específico -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Jogadores</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      li.jogador {
+        color: blue;
+      }
+
+      .jogador {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Jogadores</h1>
+      <p>Aqui está uma lista dos jogadores que participarão do jogo desta noite:</p>
+      <ul>
+        <li class="jogador">Samuel</li>
+        <li class="jogador">Rivelino</li>
+        <li class="jogador">Carlos</li>
+      </ul>
+    </main>
+  </body>
+</html>
