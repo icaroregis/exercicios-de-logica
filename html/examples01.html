@@ -1,0 +1,47 @@
+<!-- Diferentes tipos de seletores têm diferentes especificidades. A palavra especificidade significa o quanto uma coisa é específica. Portanto, a especificidade do seletor CSS determina quão específico é um determinado seletor.
+
+Seletores mais específicos substituirão declarações duplicadas de seletores menos específicos. Por exemplo:
+
+O seletor de tipo é o menos específico.
+Seguido pelo seletor class. Ele é mais específico que o seletor de tipo.
+Seguido pelo seletor id. Este é o seletor mais específico.
+Vejamos na prática:
+
+<p class="texto" id="introducao">Olá, mundo</p>
+<style>
+    /* MAIS específico */
+    #intro {
+        color: green;
+    }
+    /* Menos específico que id */
+    .texto {
+        color: blue;
+    }
+    /* ainda MENOS específico */
+    p {
+        color: red;
+    }
+</style>
+Olá, mundo
+
+E O seletor de tipo é o menos específico, pois quando você seleciona um p, ele aponta para todos os parágrafos da página, sem nenhuma distinção.
+
+O seletor class é um pouco mais específico. Ele tem como alvo todos os elementos que possuem uma classe determinada.
+
+Por fim, o seletor id é o mais específico, pois deve ser encontrado apenas uma vez na página. É por isso que color: green do seletor #introducao substituirá color: blue do seletor .texto.
+
+⚠️ Importante: As declarações CSS duplicadas que são escritas posteriormente no documento substituem as anteriores. Este é o caso quando os seletores têm a mesma especificidade. No entanto,se os elementos tiverem especificidade diferente, a ordem não importará: o seletor com a maior especificidade terá precedência.
+
+📘 Algoritmo da especificidade
+
+A especificidade do seletor CSS é um algoritmo que fornece três números para cada seletor, com base em como o seletor é composto.
+
+O valor inicial para a especificidade de um elemento é 0, 0, 0.
+
+Depois de usar um id em um seletor, o primeiro 0 é incrementado. Temos, então: 1, 0, 0.
+
+Depois de usar uma class em um seletor, o segundo 0 é incrementado: 0, 1, 0.
+
+Depois de usar um seletor de tipo, o terceiro 0 é incrementado: 0, 0, 1. Depois de colocar esses números um ao lado do outro, você pode ver que 1,0,0 é maior que 0,1,0, que é maior que 0,0,1.
+
+Essa é outra maneira de explicar a especificidade do CSS. É a maneira mais precisa. Você pode experimentá-lo nesta Calculadora de especificidade CSS. -->
