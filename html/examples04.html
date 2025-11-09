@@ -1,0 +1,85 @@
+<!-- 📘 O elemento address (endereço)
+
+O address é um elemento semântico usado para representar algumas informações de contato. Ele pode conter informações como endereço de e-mail, endereço físico, links de mídia social etc. Frequentemente, ele é usado dentro do elemento footer (mas isso não é obrigatório).
+
+Alguns exemplos de uso desse elemento:
+
+Uma página de uma empresa teria um elemento address exibindo seu e-mail e número de telefone.
+Uma página de um freelancer teria um elemento address exibindo os meios de contato preferenciais desse indivíduo. Pode ser, por exemplo, seu perfil do Twitter e endereço de e-mail.
+<footer>
+     <p>Direitos reservados - 2023.</p>
+     <p>CNPJ: 123456-1234</p>
+     <p>Visite-nos</p>
+    <address>
+         Estrada JavaScript, 42<br>
+         Universo
+    </address>
+</footer>
+Direitos reservados - 2023.
+
+Tel: 99933-3344
+
+Visite-nos
+
+Estrada JavaScript, 42
+Universo
+Como você pode ver, dentro do address convém usar o elemento br (quebra de linha), pois os endereços geralmente são formatados em múltiplas linhas.
+
+Embora o elemento address seja renderizado em itálico na maioria dos navegadores, não se esqueça de focar em seu significado semântico ao invés de estilos. Você pode alterar os estilos com CSS.
+
+Além disso, você deve ter notado que o elemento address tem um display: block. Esses estilos vêm da folha de estilo do agente do usuário.
+
+📘 Benefícios da semântica
+
+Há muitos benefícios em usar o elemento address para representar detalhes de contato. Os mecanismos de pesquisa entenderão melhor o seu site e encontrarão diretamente seus detalhes de contato quando alguém pesquisar por número de telefone da empresa X.
+
+📘 O elemento time (tempo)
+
+O time é um elemento semântico usado para representar datas, horas, deslocamentos de fuso horário e durações.
+
+Por exemplo:
+
+<p>Seu cronômetro: <time>4h 18m 3s</time>.</p>
+<p>O evento começa às <time>18:00</time>.</p>
+<p>Certifique-se de registrar-se antes de <time>23-11-2023</time></p>
+Seu cronômetro: 4h 18m 3s.
+
+O evento começa às 18:00.
+
+Certifique-se de registrar-se antes de 2023-11-23
+
+O elemento time não possui estilos de agente de usuário. Assim, sua exibição padrão é inline.
+
+É um elemento importante, no entanto, por causa de seu significado semântico. Os mecanismos de pesquisa podem entender melhor quando um evento começa ou termina, quanto tempo dura um evento etc.
+
+O elemento time deve conter apenas a hora que você está representando em um formato legível por máquina (os formatos mais populares são: YYYY-mm-dd comum em bancos de dados, YYYY-mm, YYYY-mm-dd hh:mm:ss, etc.). Confira a especificação HTML oficial ou o MDN para uma lista mais detalhada.
+
+📘 O atributo datetime
+
+Embora tenhamos acabado de dizer que o elemento time deve conter apenas a hora em um formato legível por máquina, às vezes isso é impossível, como neste caso:
+
+<p>O evento começa em 20 de junho.</p>
+Aqui, você deve especificar o atributo datetime no local onde você poderá fornecer o formato legível por máquina para o navegador, enquanto mostra o formato amigável para o usuário:
+
+<p>O evento começa em <time datetime="2022-06-20">20 de junho</time>.</p>
+Isso é comum, pois várias APIs fornecem um formato legível por máquina (geralmente vindo do banco de dados no formato YYYY-mm-dd ou YYYY-mm-dd hh:mm:ss). Você então fornecerá este valor como o valor do atributo datetime e, em seguida, mostrará o valor amigável dentro das tags <time>...</time>.
+
+📘 Especificando durações de tempo
+
+As durações são um pouco mais difíceis de especificar em comparação com as datas. Uma duração deve sempre começar com um P. Então, se você estiver especificando horas, minutos ou segundos, precisará adicionar um T no início e usar o seguinte formato:
+
+PT2H3M4S
+Este exemplo representa uma duração de 2 horas, 3 minutos e 4 segundos. Você pode substituir os números pelo seu valor correto. Além disso, você pode descartar os caracteres H, M ou S que não forem usados. Por exemplo, uma duração de 30 minutos é representada assim:
+
+PT30M
+Como alternativa, você pode especificar os dias usando este formato:
+
+P5D
+Isso representa uma duração de 5 dias.
+
+Se você precisar especificar dias e horas juntos, o formato é:
+
+P1DT2H3M4S.
+Isso representa uma duração de 1 dia, 2 horas, 3 minutos e 4 segundos.
+
+A sintaxe é bastante complicada, por isso é melhor validar o valor fornecido com o validador w3 para garantir que esteja correto. -->

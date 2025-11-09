@@ -1,0 +1,156 @@
+<!-- 📘 Régua horizontal e bordas
+
+O elemento hr (régua horizontal) é um elemento semântico que representa uma quebra temática entre vários parágrafos.
+
+Muitas vezes você vê isso em artigos. Por exemplo, quando o tópico do artigo muda para outro ponto de vista ou para outro tema ligeiramente diferente.
+
+Veja como funciona:
+
+<p>O impacto (positivo) da programação na geração jovem é inegável.</p>
+<hr>
+<p>Ao longo da História, no entanto, não foi assim.</p>
+O impacto (positivo) da programação na geração jovem é inegável.
+
+Ao longo da História, no entanto, não foi assim.
+
+
+Observe que o elemento hr não deve ser usado com o único propósito de exibir uma borda. Para isso, você deve usar CSS. O elemento hr só deve ser usado como uma quebra temática.
+
+📘 Bordas em CSS
+
+Ao criar bordas, geralmente usamos a propriedade shorthand (abreviada) border. Antes de podermos introduzir a propriedade border, vamos abordar estas três propriedades:
+
+📘 border-style (estilo da borda)
+
+A propriedade border-style, que já vimos, define o estilo da borda. Estes são alguns dos estilos mais comuns que você pode usar:
+
+solid (sólida - mais comum)
+dashed (tracejada)
+dotted (pontilhada)
+double (dupla)
+none (nenhuma borda será exibida)
+A propriedade border-style é uma propriedade abreviada para as seguintes propriedades:
+
+border-top-style (estilo da borda do topo)
+border-right-style (estilo da borda direita)
+border-bottom-style (estilo da borda inferior)
+border-left-style (estilo da borda esquerda)
+No entanto, esse é um recurso raramente usado, pois geralmente o estilo da borda é o mesmo nos quatro lados.
+
+Você pode usar a mesma sintaxe que aprendemos com o elemento padding/margin para definir valores diferentes para os quatro cantos:
+
+<p>Olá, mundo</p>
+<style>
+    p {
+        border-style: dashed dotted double none;
+    }
+</style>
+Olá, mundo
+
+A ordem é, como sempre, topo, direita, base e esquerda.
+
+📘 border-color (cor da borda)
+
+A propriedade border-color é usada para mudar a cor da borda. Por exemplo:
+
+Um assunto.
+<hr>
+Outro assunto.
+<style>
+    hr {
+        border-color: red;
+        border-style: solid;
+    }
+</style>
+Um assunto.
+
+Outro assunto.
+
+Recomendamos adicionar border-style: solid ao estilizar o elemento hr, pois seu estilo de borda padrão é inset, que tem uma aparência bastante ultrapassada.
+
+A border-color também é uma abreviação que define essas 4 propriedades:
+
+border-top-color (cor da borda superior)
+border-right-color (cor da borda direita)
+border-bottom-color (cor da borda inferior)
+border-left-color (cor da borda esquerda)
+📘 border-width (largura da borda)
+
+A propriedade border-width é usada para alterar a largura da borda. Por exemplo:
+
+Um assunto.
+<hr>
+Outro assunto.
+<style>
+    hr {
+        border-style: solid;
+        border-color: green;
+        border-width: 5px;
+    }
+</style>
+Um assunto.
+
+Outro assunto.
+
+Também é uma propriedade abreviada que pode ser usada para especificar diferentes valores de borda para os 4 cantos:
+
+border-top-width (largura da borda superior)
+border-right-width (largura da borda direita)
+border-bottom-width (largura da borda inferior)
+border-left-width (largura da borda esquerda)
+📘 border (borda)
+
+A propriedade border é uma abreviação usada para especificar as três propriedades a seguir (em ordem):
+
+border-width (largura da borda)
+border-style (estilo da borda)
+border-color (cor da borda)
+Por exemplo:
+
+Um assunto.
+<hr>
+Outro assunto.
+<style>
+    hr {
+        border: 1px solid black;
+    }
+</style>
+Um assunto.
+
+Outro assunto.
+
+Os três valores devem ser separados por um caractere de espaço.
+
+A border-width será definida como 1px, o estilo como sólido e a cor como preto. Isso se aplica a todos os quatro cantos.
+
+Esta é a forma mais comum de especificar a borda de um elemento.
+
+📘 A borda dupla do hr
+
+Depois de definir border: 1px solid black no elementohr, você terá a mesma borda em todos os quatro lados. Isso significa que os lados superior e inferior têm uma borda de 1px. Então, no total, você tem uma borda de 2px no eixo horizontal.
+
+Você pode se livrar de um dos dois lados definindo border-top como none (ou border-bottom como none).
+
+Por exemplo:
+
+Um assunto.
+<hr>
+Outro assunto.
+<style>
+    hr {
+        border: 1px solid black;
+        border-bottom: none;
+       /* OU border-bottom-color: black; */
+    }
+</style>
+Um assunto.
+
+Outro assunto.
+
+Todas as variações inline e block também existem para todas as propriedades border-. Por exemplo:
+
+border-inline
+border-block
+border-block-style
+border-block-width
+etc. -->
