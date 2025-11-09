@@ -7,4 +7,4 @@ function finalGreet(guestName) {
   console.log(message + ' Your table is ready.');
 }
 
-finalGreet('Star Commander');
+finalGreet(undefined);
