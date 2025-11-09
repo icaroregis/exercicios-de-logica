@@ -1,0 +1,54 @@
+<!-- 📘 O elemento blockquote
+
+O blockquote é um elemento semântico usado para representar texto citado de outra fonte.
+
+Por exemplo:
+
+<blockquote>
+     <p>Eu apenas tive que pegar a ideia do hipertexto e conectá-la às ideias de TCP e DNS, e surgiu a World Wide Web.</p>
+</blockquote>
+Eu apenas tive que pegar a ideia do hipertexto e conectá-la às ideias de TCP e DNS, e surgiu a World Wide Web.
+
+O elemento blockquote, por padrão, é recuado, ou seja, possui uma margem maior do lado esquerdo. Isso pode ser alterado configurando a propriedade margin-left (que substituirá a folha de estilo do agente do usuário).
+
+Também é possível inserir um link para a origem da citação, se estiver disponível, usando o atributo cite:
+
+<blockquote cite="https://en.wikipedia.org/wiki/Tim_Berners-Lee">
+     <p>Eu apenas tive que pegar a ideia
+      do hipertexto e conectá-la às ideias
+      de TCP e DNS, e surgiu a World Wide Web.</p>
+</blockquote>
+<p>- Tim Berners-Lee</p>
+Eu apenas tive que pegar a ideia do hipertexto e conectá-la às ideias de TCP e DNS, e surgiu a World Wide Web.
+
+- Tim Berners-Lee
+
+Note que a origem da citação não é exibida para o usuário.
+
+📘 O elemento q
+
+O q (aspas inline) é um elemento semântico usado para representar aspas inline dentro de um texto.
+
+A principal diferença entre os elementos q e blockquote é que q é usado para aspas inline. Isso significa que a citação está dentro de uma frase existente. A citação não é recuada e não é renderizada em uma linha separada. Por exemplo:
+
+<!-- blockquote é sempre renderizado
+em uma linha separada (display: block) -->
+<blockquote>
+  <p>Eu apenas tive que pegar a ideia do hipertexto e conectá-la às ideias de TCP e DNS, e surgiu a World Wide Web.</p>
+</blockquote>
+
+<!-- q é renderizado inline -->
+<p>O slogan do curso de JavaScript é: <q>A maneira mais fácil de aprender e praticar JavaScript moderno</q></p>
+Eu apenas tive que pegar a ideia do hipertexto e conectá-la às ideias de TCP e DNS, e surgiu a World Wide Web. O slogan
+do curso de JavaScript é: A maneira mais fácil de aprender e praticar JavaScript moderno Observe como o q é inline; ele
+não pula para uma nova linha. Além disso, o navegador adiciona aspas automaticamente. Você deve usar o elemento
+blockquote para citações mais longas ou citações que precisam ser renderizadas em uma linha separada. O elemento q
+também suporta apontar para a fonte da citação usando o atributo cite. 📘 O elemento de citação O cite é um elemento
+semântico utilizado para representar o título de uma obra, por exemplo, um livro, uma música, um filme etc. Porém, não
+deve ser utilizado para nomes de pessoas. Por exemplo:
+
+<p>Um dos meus livros favoritos é <cite>Harry Potter</cite> de J.K. Rowling.</p>
+<p>Hoje vamos aprender a usar o programa <cite>PowerPoint</cite>.</p>
+Um dos meus livros favoritos é Harry Potter de J.K. Rowling. Hoje vamos aprender a usar o programa PowerPoint.
+Certifique-se de não confundir o elemento cite com o atributo cite. O atributo é usado para apontar para a fonte de uma
+citação. -->
