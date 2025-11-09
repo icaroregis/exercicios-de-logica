@@ -1,7 +1,6 @@
 function logAstronomicalEvents(...events) {
   // * Aqui events é um array que contém todos os argumentos passados para a função
-  const restEvents = events;
-  for (let event of restEvents) {
+  for (let event of events) {
     console.log(`A cosmic event is happening: ${event}!`);
   }
 }
