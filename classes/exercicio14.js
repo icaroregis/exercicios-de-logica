@@ -1,4 +1,4 @@
-class ShowroomVehicle {
+class Vehicle {
   constructor(make, model, year = '2030') {
     this.make = make;
     this.model = model;
@@ -6,5 +6,5 @@ class ShowroomVehicle {
   }
 }
 
-const vehicle = new ShowroomVehicle('Honda', 'Civic', '2022');
+const vehicle = new Vehicle('Honda', 'Civic', '2022');
 console.log(vehicle);
