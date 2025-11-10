@@ -1,0 +1,1 @@
+// Pense nos atributos como propriedades. Para uma Dog classe, os atributos podem incluir características como o nome, a idade e o sobrenome name: "Fido", breed: "Poodle", color: "White". Esses atributos descrevem as características de um cachorro como o Fido.
