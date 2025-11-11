@@ -24,8 +24,8 @@ class Vehicle {
 
 let myVehicle = new Vehicle('Cybertruck');
 myVehicle.fuelLevel = 90;
-
 console.log(myVehicle.fuelLevel);
+
 console.log(myVehicle.nameVehicle);
 
 myVehicle.fuelLevel = 50;
