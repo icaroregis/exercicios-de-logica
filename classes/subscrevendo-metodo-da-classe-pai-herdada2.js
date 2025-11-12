@@ -20,6 +20,9 @@ class Funcionario {
 }
 
 class Gerente extends Funcionario {
+  constructor(nome, sobrenome, cargo) {
+    super(nome, sobrenome, cargo);
+  }
   obterPosicao() {
     return `${this.nome} é o gerente`;
   }
