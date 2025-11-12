@@ -26,7 +26,7 @@ class newDog {
   }
 
   eat(food) {
-    // "this" corresponds to the reference to the current Dog class instance
+    // "this" corresponde à referência à instância atual da classe Dog
     console.log(`${this.name} is eating ${food}.`);
   }
 
@@ -44,3 +44,16 @@ console.log(spyke.color); // Prints: White
 spyke.bark(); // Prints: Woof Woof!
 spyke.eat('bone'); // Prints: Fido is eating bone.
 spyke.sleep(); // Prints: Zzz...
+
+// Uma instância de uma classe é um objeto criado a partir dessa classe.
+// A classe é como um molde ou uma “fôrma” que define as propriedades (atributos) e comportamentos (métodos) de um tipo de objeto.
+// Quando você usa o operador new para criar um objeto a partir da classe, esse objeto é chamado de instância.
+// Exemplo do seu código:
+
+class Dog {
+  name = 'Fido';
+  breed = 'Poodle';
+  color = 'White';
+}
+
+const lessy = new Dog(); // fido é uma instância da classe Dog
