@@ -10,12 +10,14 @@ function grantABenefit(numberOfPeoples) {
 
   if (result >= 1500) {
     console.log(
-      `A renda per capita da sua família é: ${result.toFixed(
+      `A renda per capita da sua família é: R$ ${result.toFixed(
         2,
-      )}.\nInfelizmente você não está opto(a) para receber o benefício!`,
+      )}\nInfelizmente você não está opto(a) para receber o benefício!`,
     );
   } else {
-    console.log(`A renda per capita da sua família é: ${result.toFixed(2)}.\nParabéns o benefício pode ser concedido!`);
+    console.log(
+      `A renda per capita da sua família é: R$ ${result.toFixed(2)}\nParabéns o benefício pode ser concedido!`,
+    );
   }
 }
 const numberOfPeoples = Number(readline.question('Quantas pessoas no total residem em sua casa? '));
