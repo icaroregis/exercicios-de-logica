@@ -7,7 +7,7 @@ function findFirstDuplicateID(ids) {
 
   for (const item of ids) {
     if (idSet.has(item)) {
-      return item;
+      return item.toString();
     } else {
       idSet.add(item);
     }
