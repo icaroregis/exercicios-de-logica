@@ -120,3 +120,18 @@ console.log(areDisjoint(['Alice', 'Bob', 'Charlie'], ['Xander', 'Yasmine', 'Zane
 console.log(areDisjoint(['Alice', 'Bob', 'Charlie'], ['Charlie', 'Delta', 'Echo'])); // false, 'Charlie' is common to both
 
 // Este código ilustra como Sets podemos indicar rapidamente se duas listas compartilham elementos, produzindo resultados true para listas completamente distintas e false resultados diferentes caso contrário.
+
+// Vejamos como podemos aplicar isso de forma elegante no código:
+
+// Primeiro, criamos uma lista Seta partir do nosso array. Tínhamos um assistente que filtrava automaticamente os nomes duplicados das nossas listas.
+// Em seguida, convertemos nossa lista Set, agora contendo nomes únicos, de volta em um array, pronto para uso em nosso sistema de lista de convidados.
+
+// Defining the removeDuplicates function
+function removeDuplicates(array) {
+  return Array.from(new Set(array));
+}
+
+console.log(removeDuplicates(['apple', 'apple', 'banana', 'banana', 'cherry'])); // ['apple', 'banana', 'cherry']
+console.log(removeDuplicates([1, 5, 3, 5, 2, 2, 1])); // [1, 5, 3, 2]
+
+// Esses exemplos demonstram como Sets lidar elegantemente com a remoção de duplicatas, produzindo arrays que representam de forma sucinta os elementos únicos que originalmente continham.
