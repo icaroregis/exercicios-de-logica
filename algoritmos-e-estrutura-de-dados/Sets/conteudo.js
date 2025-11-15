@@ -69,3 +69,54 @@ if (visitors.has('user123')) {
 }
 
 // Com o Sets, verificar visitas anteriores torna-se notavelmente eficiente.
+
+// Hoje, vamos abordar dois problemas que demonstram como o JavaScript Sets pode simplificar seu código e otimizar o desempenho. Os Sets objetos em JavaScript são uma maneira poderosa de lidar com coleções de itens únicos, tornando-os a estrutura de dados ideal para resolver problemas de unicidade e teste de pertinência.
+
+// Problema 1: Verificar se dois conjuntos são disjuntos
+// Vamos começar considerando a função `disjoint` areDisjoint, que recebe dois arrays e determina se eles são disjuntos, ou seja, se não possuem elementos em comum. Isso é crucial ao analisar conjuntos de dados em busca de valores sobrepostos, de forma semelhante a garantir que duas peças de quebra-cabeças diferentes não se encaixem.
+
+// Imagine duas empresas que desejam promover seus produtos em conjunto, mas que querem atingir clientes que ainda não interagiram com nenhuma das duas marcas. Garantir que seus esforços promocionais sejam independentes torna-se essencial.
+
+// Função para verificar se dois arrays são disjuntos usando Set
+function areDisjoint(arr1, arr2) {
+  const set1 = new Set(arr1);
+  for (const item of arr2) {
+    if (set1.has(item)) {
+      return false; // Encontrou elemento em comum
+    }
+  }
+  return true; // Não encontrou nenhum elemento em comum
+}
+
+// Exemplo prático 1: conjuntos disjuntos
+const clientesEmpresaA = ['Ana', 'Bruno', 'Carlos'];
+const clientesEmpresaB = ['Diana', 'Eduardo', 'Fernanda'];
+
+console.log(areDisjoint(clientesEmpresaA, clientesEmpresaB)); // true (não há clientes em comum)
+
+// Exemplo prático 2: conjuntos NÃO disjuntos
+const clientesEmpresaC = ['Ana', 'Bruno', 'Carlos'];
+const clientesEmpresaD = ['Carlos', 'Eduardo', 'Fernanda'];
+
+console.log(areDisjoint(clientesEmpresaC, clientesEmpresaD)); // false (Carlos está nos dois)
+
+// Problema 1: Construção de Soluções Eficientes
+// Considere um cenário com uma lista de nomes e um scanner super-rápido que pode dizer imediatamente se um nome está na lista. Em termos de JavaScript, é isso que Set so método oferece has uma maneira de verificar a presença em tempo real.
+
+// Vamos construir a solução, tendo essa analogia em mente, passo a passo:
+
+// Transfira os elementos de uma matriz para o nosso scanner super-rápido, também Set conhecido como set1.
+// Forneça nomes do outro array para o analisador usando o .some() método para verificar se set1 ele encontra uma correspondência. O método `some()` testa se pelo menos um elemento no conjunto passa no teste implementado pela função fornecida.
+// Como queremos determinar se não há gêmeos (elementos em comum), invertemos o resultado de `is_gender`, .some() pois ele retorna `true` true se encontrar pelo menos uma correspondência.
+
+// Defining the function areDisjoint
+function areDisjoint(array1, array2) {
+  const set1 = new Set(array1);
+  return !array2.some((element) => set1.has(element));
+}
+
+// Example calls to the function, highlighting the differences in arrays
+console.log(areDisjoint(['Alice', 'Bob', 'Charlie'], ['Xander', 'Yasmine', 'Zane'])); // true, no common names
+console.log(areDisjoint(['Alice', 'Bob', 'Charlie'], ['Charlie', 'Delta', 'Echo'])); // false, 'Charlie' is common to both
+
+// Este código ilustra como Sets podemos indicar rapidamente se duas listas compartilham elementos, produzindo resultados true para listas completamente distintas e false resultados diferentes caso contrário.
