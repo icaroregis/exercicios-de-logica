@@ -6,7 +6,7 @@ const words = ['apple', 'banana', 'orange', 'apple', 'banana', 'grape', 'kiwi', 
 let wordsSet = new Set();
 let duplicatesSet = new Set();
 
-// ! Um lista sem elementos repetidos(wordSet). Outra lista somente com os elementos que se repetem(duplicateSet) no array words
+// ! Uma lista sem elementos repetidos(wordSet). Outra lista somente com os elementos que se repetem(duplicateSet) no array words
 for (let word of words) {
   if (wordsSet.has(word)) {
     duplicatesSet.add(word);
