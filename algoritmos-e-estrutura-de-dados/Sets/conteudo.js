@@ -135,3 +135,7 @@ console.log(removeDuplicates(['apple', 'apple', 'banana', 'banana', 'cherry']));
 console.log(removeDuplicates([1, 5, 3, 5, 2, 2, 1])); // [1, 5, 3, 2]
 
 // Esses exemplos demonstram como Sets lidar elegantemente com a remoção de duplicatas, produzindo arrays que representam de forma sucinta os elementos únicos que originalmente continham.
+
+// Bem-vindos à nossa exploração focada em JavaScript Sete suas notáveis ​​aplicações na resolução de desafios algorítmicos. Nesta lição, " Desvendando os Mistérios da Unicidade e dos Anagramas com Conjuntos em JavaScript ", exploraremos como essa poderosa estrutura de dados pode ser usada para abordar e resolver certos tipos de problemas comumente encontrados em entrevistas técnicas.
+
+
