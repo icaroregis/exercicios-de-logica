@@ -138,4 +138,7 @@ console.log(removeDuplicates([1, 5, 3, 5, 2, 2, 1])); // [1, 5, 3, 2]
 
 // Bem-vindos à nossa exploração focada em JavaScript Sete suas notáveis ​​aplicações na resolução de desafios algorítmicos. Nesta lição, " Desvendando os Mistérios da Unicidade e dos Anagramas com Conjuntos em JavaScript ", exploraremos como essa poderosa estrutura de dados pode ser usada para abordar e resolver certos tipos de problemas comumente encontrados em entrevistas técnicas.
 
+// Problema 1: Abordagem Eficiente
+// Podemos usar duas Set instâncias: wordsSet uma para manter as palavras únicas e outra duplicatesSet para rastrear palavras duplicadas. Ao final, podemos remover todas as palavras duplicadas wordsSet para atingir nosso objetivo. Veja como usar essa ferramenta Set para resolver o problema:
 
+// Crie uma Set instância para armazenar palavras únicas:
