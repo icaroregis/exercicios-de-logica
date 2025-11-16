@@ -87,3 +87,18 @@ function countWordFrequencies(text) {
 
   return frequencyMap; // Exemplo de retorno: Map { 'olá' => 2, 'mundo' => 1 }
 }
+
+// Problema 2: Abordagem e Construção da Solução
+// Em vez disso, o .values() método do Map do JavaScript nos fornece um caminho direto para iterar sobre todos os valores necessários para a nossa soma. É tudo uma questão de ter a ferramenta certa para o trabalho!
+
+// Vamos revisar como escreveríamos uma função simples e concisa para isso. Começaremos inicializando a soma:
+
+function sumOfMapValues(numberMap) {
+  let sum = 0;
+  for (let value of numberMap.values()) {
+    sum += value;
+  }
+  return sum;
+}
+
+// O resultado? Um único número representa o custo total de todas as categorias. Rápido, fácil e um exemplo perfeito das capacidades do JavaScript Map.
