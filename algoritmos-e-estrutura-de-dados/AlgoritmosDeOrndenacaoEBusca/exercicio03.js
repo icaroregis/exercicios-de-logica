@@ -8,7 +8,7 @@ function countCakeLayers(layers) {
   }
 }
 console.log(countCakeLayers(5)); // Should print 5
-//!A soma de 1 + (5 - 1 = 4) nunca acontece pois cada loop a função é chamada novamente
+//!A multiplicação de layers * (5 - 1 = 4) nunca acontece pois a cada loop a função é chamada novamente
 
 // 1 loop: 5 * (5 - 1 = 4)
 // 2 loop: 4 * (4 - 1 = 3)
