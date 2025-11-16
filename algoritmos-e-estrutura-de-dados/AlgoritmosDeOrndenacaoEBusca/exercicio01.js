@@ -33,7 +33,7 @@ console.log(countDigits(1302)); // Should output 4
 // 1 < 10? Sim!
 // Retorna 1.
 
-// ! começa 1, 1, 1, 1 a sma nunca acontece pois a função sempre é chamada novamente.
+// ! começa 1, 1, 1, 1 a soma nunca acontece pois a função sempre é chamada novamente. somente quando atinge a condição de parada aí é somado debaixo para cima.
 // ! chega na condição de parada então pé resolvida
 // ! resolve 1 + 1 + 1 + 1 = 4
 
