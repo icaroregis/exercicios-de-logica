@@ -21,6 +21,9 @@ function createKeywordIndex(documents) {
     words.forEach((word) => {
       // Indexe as palavras, atribuindo a cada palavra suas referências de documento
       if (index.has(word)) {
+        // O método .add() é do objeto Set, que serve para adicionar valores únicos (sem repetição).
+        // O método .set() é do objeto Map, que serve para associar uma chave a um valor.
+
         index.get(word).add(docIndex);
       } else {
         // Ao encontrar uma nova palavra, criamos uma nova entrada em nosso índice
