@@ -30,6 +30,10 @@ console.log(sumOfDigits(12345)); // Will print 15 (1+2+3+4+5)
 // 5 loop
 // return 1
 
+// ! começa 1, 2, 3, 4, 5
+// ! chega na condição de parada então pé resolvida
+// ! resolve 5, 4, 3, 2, 1
+
 // 💡 **Curiosidade:** Pense na pilha de execução como uma impressora: se você enviar cinco arquivos para imprimir, eles ficam armazenados em uma pilha. Só quando a impressora executa o processo, eles vão sendo impressos um a um — e, no caso da recursividade, o processo começa do último arquivo enviado.
 
 // depois recomeça pegando do último registro no caso 1 e somando com os outros registros
@@ -41,7 +45,3 @@ console.log(sumOfDigits(12345)); // Will print 15 (1+2+3+4+5)
 // 5 loop = 1 + 2 + 3 + 4 + 5 = 15 total
 
 // A recursividade sempre segue o conceito de LIFO (Last In, First Out — o último a entrar é o primeiro a sair), porque cada chamada recursiva é empilhada na call stack, e só começa a ser resolvida quando chega na condição de parada.
-
-// começa 1, 2, 3, 4, 5
-// chega na condição de parada então pé resolvida
-// resolve 5, 4, 3, 2, 1
