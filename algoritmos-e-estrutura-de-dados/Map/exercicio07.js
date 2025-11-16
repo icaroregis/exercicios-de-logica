@@ -7,7 +7,7 @@
 function frequentUser(visits) {
   const countMap = new Map();
   const majorityThreshold = visits.length / 4;
-  for (let visit of visits) {
+  for (const visit of visits) {
     if (visit === 0) {
       continue;
     }
