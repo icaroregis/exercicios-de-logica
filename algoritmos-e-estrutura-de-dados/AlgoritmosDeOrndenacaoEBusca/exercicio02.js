@@ -1,4 +1,4 @@
-// Para entender melhor como a recursão funciona, modifique a countCakeLayersfunção para que ela imprima uma mensagem cada vez que uma camada for contada. Isso ajudará você a visualizar as chamadas recursivas em ação. Você só precisa adicionar uma pequena console.loginstrução para conseguir isso.
+// Para entender melhor como a recursão funciona, modifique a countCakeLayers função para que ela imprima uma mensagem cada vez que uma camada for contada. Isso ajudará você a visualizar as chamadas recursivas em ação. Você só precisa adicionar uma pequena console.log instrução para conseguir isso.
 
 function countCakeLayers(layers) {
   if (layers === 1) {

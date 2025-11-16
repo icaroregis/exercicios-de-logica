@@ -8,22 +8,22 @@ function sumOfDigits(num) {
 console.log(sumOfDigits(12345)); // Will print 15 (1+2+3+4+5)
 
 // 1 loop
-// num % 10 → 12345 % 10 = 5
+// 5 → 12345 % 10 = 5
 // Math.floor(num / 10) → Math.floor(12345 / 10) = 1234 (remove o último dígito)
 // Então, a chamada fica: return 5 + sumOfDigits(1234);
 
 // 2 loop
-// num % 10 → 1234 % 10 = 4
+// 4 → 1234 % 10 = 4
 // Math.floor(num / 10) → Math.floor(1234 / 10) = 123 (remove o último dígito)
 // Então, a chamada fica: return 4 + sumOfDigits(123);
 
 // 3 loop
-// num % 10 → 123 % 10 = 3
+// 3 → 123 % 10 = 3
 // Math.floor(num / 10) → Math.floor(123 / 10) = 12 (remove o último dígito)
 // Então, a chamada fica: return 3 + sumOfDigits(123);
 
 // 4 loop
-// num % 10 → 12 % 10 = 1
+// 2 → 12 % 10 = 2
 // Math.floor(num / 10) → Math.floor(12 / 10) = 1,2 = 1 (remove o último dígito)
 // Então, a chamada fica: return 2 + sumOfDigits(1);
 
