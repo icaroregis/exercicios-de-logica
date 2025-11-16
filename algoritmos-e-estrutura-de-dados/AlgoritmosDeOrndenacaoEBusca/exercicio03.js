@@ -7,14 +7,14 @@ function countCakeLayers(layers) {
     return 1 + countCakeLayers(layers - 1); // Count this layer plus the rest
   }
 }
-
 console.log(countCakeLayers(5)); // Should print 5
+//!A soma de 1 + (5 - 1 = 4) nunca acontece pois cada loop a função é chamada novamente
 
-// 1 + (5 - 1 = 4)
-// 1 + (4 - 1 = 3)
-// 1 + (3 - 1 = 2)
-// 1 + (2 - 1 = 1)
-// 1 + 1
+// 1 loop: 1 + (5 - 1 = 4)
+// 2 loop: 1 + (4 - 1 = 3)
+// 3 loop: 1 + (3 - 1 = 2)
+// 4 loop: 1 + (2 - 1 = 1)
+// 5 loop: 1 + 1
 
 // agora quando chega na condição de parada voltamos somando os valores de return
-// 1 + 1 + 1 + 1 + 1 = 5
+// 5loop: 1 + 4loop: 1 + 3loop: 1 + 2loop: 1 + 1loop: 1 = 5
