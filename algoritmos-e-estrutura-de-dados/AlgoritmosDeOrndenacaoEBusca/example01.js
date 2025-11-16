@@ -39,3 +39,5 @@ console.log(sumOfDigits(12345)); // Will print 15 (1+2+3+4+5)
 // 3 loop = 1 + 2 + 3
 // 4 loop = 1 + 2 + 3 + 4
 // 5 loop = 1 + 2 + 3 + 4 + 5 = 15 total
+
+// A recursividade sempre segue o conceito de LIFO (Last In, First Out — o último a entrar é o primeiro a sair), porque cada chamada recursiva é empilhada na call stack, e só começa a ser resolvida quando chega na condição de parada.
