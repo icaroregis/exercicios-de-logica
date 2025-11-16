@@ -65,3 +65,7 @@ function sumOfDigits(num) {
 console.log(sumOfDigits(12345)); // Will print 15 (1+2+3+4+5)
 
 // Nessa função, de forma semelhante ao cálculo do fatorial, passamos Math.floor(num / 10)para o próximo nível de recursão, descartando efetivamente o último dígito em cada chamada recursiva.
+
+// começa 1, 2, 3, 4, 5
+// chega na condição de parada então pé resolvida
+// resolve 5, 4, 3, 2, 1
