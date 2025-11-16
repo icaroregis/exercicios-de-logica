@@ -20,7 +20,7 @@ console.log(countCakeLayers(5)); // Should print 5
 // agora quando chega na condição de parada voltamos somando os valores de return
 // 5loop: 1 * 4loop: 2 * 3loop: 3 * 2loop: 4 * 1loop: 5 = 120
 
-// countCakeLayers(2) retorna 2 * 1 = 2
-// countCakeLayers(3) retorna 3 * 2 = 6
-// countCakeLayers(4) retorna 4 * 6 = 24
-// countCakeLayers(5) retorna 5 * 24 = 120
+// countCakeLayers(2) retorna 1 * 2 = 2
+// countCakeLayers(3) retorna 2 * 3 = 6
+// countCakeLayers(4) retorna 6 * 4 = 24
+// countCakeLayers(5) retorna 24 * 5 = 120
