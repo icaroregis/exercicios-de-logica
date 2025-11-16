@@ -62,3 +62,28 @@ console.log(superstoreStock.has('soap')); // Outputs: false
 // Item is restocked
 superstoreStock.set('soap', 500); // Soap is restocked
 console.log(superstoreStock.has('soap')); // Outputs: true
+
+// Problema 1: Contar a frequência de palavras em um texto
+// Imagine que temos um blog. Queremos analisar as postagens para ver quais tópicos são mais discutidos. Uma solução prática envolve escrever uma função para contar a frequência de cada palavra em uma postagem do blog, ignorando maiúsculas e minúsculas e pontuação.
+
+// Essa função é essencial em ferramentas de análise de texto usadas na otimização de mecanismos de busca. Ela pode destacar tópicos populares e até sugerir tags para as postagens, aumentando a visibilidade nos resultados de busca.
+
+// Os mapas são muito úteis, permitindo-nos associar cada palavra única à sua frequência de ocorrência sem esforço. Com isso em mente, podemos rastrear a frequência com que cada palavra aparece com muito menos código e mais rapidamente!
+
+// Vamos começar criando uma função e limpando nossa entrada: removendo a pontuação e convertendo tudo para minúsculas para manter a consistência.
+
+function countWordFrequencies(text) {
+  let normalizedText = text.toLowerCase().replace(/[^\w\s]/g, ''); // "olá mundo olá" (exemplo de entrada: "Olá, mundo! Olá.")
+
+  // Divide o texto limpo em palavras separadas por espaço
+  let words = normalizedText.split(/\s+/); // ['olá', 'mundo', 'olá']
+  let frequencyMap = new Map(); // Mapa vazio inicialmente: Map(0) {}
+
+  // Conta a frequência de cada palavra
+  for (let word of words) {
+    let count = frequencyMap.get(word) || 0; // Para 'olá': 0 (primeira vez), depois 1 (segunda vez)
+    frequencyMap.set(word, count + 1); // Após processar 'olá' duas vezes: Map { 'olá' => 2, 'mundo' => 1 }
+  }
+
+  return frequencyMap; // Exemplo de retorno: Map { 'olá' => 2, 'mundo' => 1 }
+}
