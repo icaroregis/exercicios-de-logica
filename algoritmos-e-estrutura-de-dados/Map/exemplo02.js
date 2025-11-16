@@ -41,3 +41,5 @@ const index = createKeywordIndex(documents);
 // a palavra 'sustentabilidade' foi associada as linhas 0, 1 e 2
 
 console.log(index);
+
+// Ao final, construímos um índice robusto que pode nos dizer sem esforço onde encontrar qualquer palavra, ilustrando a utilidade de [método/ferramenta] Mapse Setsa importância de uma estruturação de dados eficaz.
