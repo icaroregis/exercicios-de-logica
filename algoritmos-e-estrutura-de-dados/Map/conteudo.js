@@ -102,3 +102,43 @@ function sumOfMapValues(numberMap) {
 }
 
 // O resultado? Um único número representa o custo total de todas as categorias. Rápido, fácil e um exemplo perfeito das capacidades do JavaScript Map.
+
+// Vamos usar um cenário familiar: em uma festa, é fácil notar que existe uma pessoa que todos parecem conhecer. Essa pessoa, semelhante à "celebridade" da festa, serve como analogia para um elemento em um array que aparece mais da metade das vezes — nossa tarefa é identificar esse elemento "celebridade" em meio a uma multidão de números.
+
+let countMap = new Map();
+let majorityThreshold = arr.length / 2;
+
+for (let num of arr) {
+  countMap.set(num, (countMap.get(num) || 0) + 1);
+  if (countMap.get(num) > majorityThreshold) {
+    return num;
+  }
+  return -1;
+}
+
+// Se a contagem terminar sem um vencedor por maioria, retornamos -1, o que significa que não há nenhuma celebridade na festa.
+
+// Problema 2: Indexador de Documentos por Palavra-chave
+// Agora, vamos passar para um cenário de biblioteca digital, onde você deseja encontrar todos os artigos que mencionam uma palavra específica, digamos, "sustentabilidade". Assim como um bibliotecário que localiza rapidamente livros sobre um tópico, precisamos de um sistema eficiente para indexar palavras aos documentos em que elas aparecem — uma tarefa vital para que os mecanismos de busca modernos funcionem de forma eficaz.
+
+// Utilizar `map` Map se Sets`filter` em JavaScript é semelhante a usar um sistema de catálogo digital — rápido, sem erros e capaz de lidar eficientemente com grandes volumes de dados. Essa abordagem proporciona a funcionalidade de busca rápida para vincular palavras a documentos de forma eficaz.
+
+// Começamos por declarar o nosso Mapa, que funcionará como o nosso sistema de catálogo digital:
+
+function createKeywordIndex(documents) {
+  const index = new Map();
+  documents.forEach((doc, docIndex) => {
+    let words = doc.split(/\s+/);
+    words.forEach((word) => {
+      // Indexe as palavras, atribuindo a cada palavra suas referências de documento
+      if (index.has(word)) {
+        index.get(word).add(docIndex);
+      } else {
+        // Ao encontrar uma nova palavra, criamos uma nova entrada em nosso índice
+        index.set(word, new Set([docIndex]));
+      }
+    });
+  });
+
+  return index;
+}
