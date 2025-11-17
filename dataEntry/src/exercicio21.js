@@ -19,3 +19,12 @@ function verifyAges() {
   );
 }
 verifyAges();
+
+// tambem pode ser usado o método sort()
+const numeros = [5, 2, 9, 1, 7];
+numeros.sort((a, b) => a - b);
+console.log(numeros); // [1, 2, 5, 7, 9]
+
+const numeros2 = [5, 2, 9, 1, 7];
+numeros2.sort((a, b) => b - a);
+console.log(numeros2); // [9, 7, 5, 2, 1]
