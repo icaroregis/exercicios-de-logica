@@ -1,13 +1,13 @@
 // Você consegue identificar o que está errado com nossa função fatorial? Examine o código e corrija o erro para calcular o fatorial de um número com precisão.
 
 function countCakeLayers(layers) {
-  if (layers === 1) {
-    return 1; // Only one layer
+  if (layers === 0 || layers === 1) {
+    return 1;
   } else {
     return layers * countCakeLayers(layers - 1); // Count this layer plus the rest
   }
 }
-console.log(countCakeLayers(5)); // Should print 5
+console.log(countCakeLayers(5)); // Should print 120
 
 //!A multiplicação de layers * (5 - 1 = 4) nunca acontece pois a cada loop a função é chamada novamente
 
