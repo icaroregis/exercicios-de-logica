@@ -1,11 +1,9 @@
 // Sua tarefa neste exercício é escrever uma função recursiva que calcule a soma dos dígitos de um número dado. Mãos à obra!
 
 function sumDigits(number) {
-  if (number <= 10) {
-    console.log(number);
+  if (number < 10) {
     return number;
   } else {
-    console.log(number);
     return (number % 10) + sumDigits(Math.floor(number / 10));
   }
 }
