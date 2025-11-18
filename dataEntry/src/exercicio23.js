@@ -13,40 +13,25 @@
 
 import readline from 'readline-sync';
 
-function discoverMonthsOfTheYear(monthIndex) {
-  return monthIndex === 0
-    ? 'Janeiro'
-    : monthIndex === 1
-    ? 'Fevereiro'
-    : monthIndex === 2
-    ? 'Março'
-    : monthIndex === 3
-    ? 'Abril'
-    : monthIndex === 4
-    ? 'Maio'
-    : monthIndex === 5
-    ? 'Junho'
-    : monthIndex === 6
-    ? 'Julho'
-    : monthIndex === 7
-    ? 'Agosto'
-    : monthIndex === 8
-    ? 'Setembro'
-    : monthIndex === 9
-    ? 'Outubro'
-    : monthIndex === 10
-    ? 'Novembro'
-    : monthIndex === 11
-    ? 'Dezembro'
-    : '';
-}
+const months = [
+  'janeiro',
+  'fevereiro',
+  'março',
+  'abril',
+  'maio',
+  'junho',
+  'julho',
+  'agosto',
+  'setembro',
+  'outubro',
+  'novembro',
+  'dezembro',
+];
 
 function calculateFourteenthSalary() {
   let profitDatabase = [];
   for (let profit = 0; profit < 12; profit++) {
-    const profitEarned = parseFloat(
-      readline.question(`Qual o lucro obtido do mês de ${discoverMonthsOfTheYear(profit)}? `),
-    );
+    const profitEarned = parseFloat(readline.question(`Qual o lucro obtido do mês de ${months[profit]}? `));
     profitDatabase.push(profitEarned);
   }
   const numberOfEmployees = parseFloat(readline.question('Qual a quantidade de funcionários? '));
