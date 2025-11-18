@@ -52,7 +52,7 @@ function calculateFourteenthSalary() {
   const numberOfEmployees = parseFloat(readline.question('Qual a quantidade de funcionários? '));
   const profitTarget = parseFloat(readline.question('Qual a meta anual da empresa? '));
   const totalAnnualProfit = profitDatabase.reduce((acc, value) => acc + value, 0);
-  const fourteenthSalary = (profitDatabase.reduce((acc, value) => acc + value, 0) - profitTarget) / numberOfEmployees;
+  const fourteenthSalary = (totalAnnualProfit - profitTarget) / numberOfEmployees;
   if (totalAnnualProfit > profitTarget) {
     console.log(`O décimo quarto salário para cada funcionário será: ${fourteenthSalary.toFixed(2)}`);
     return;
