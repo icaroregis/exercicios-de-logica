@@ -1,0 +1,69 @@
+// Objetivo: Crie um algoritmo para ajudar uma empresa a calcular o décimo quarto salário dos funcionários.
+
+// O programa deve solicitar:
+
+// o lucro obtido em cada um dos 12 meses do ano;
+// a quantidade de funcionários;
+// o salário de cada funcionário;
+// e a meta de lucro anual da empresa.
+
+// Ao final, o algoritmo deve verificar se a meta foi atingida e, caso positivo, calcular o valor do décimo quarto salário para cada funcionário.
+
+// Caso contrário, informar que a meta não foi alcançada e o benefício não será pago.
+
+import readline from 'readline-sync';
+
+function discoverMonthsOfTheYear(monthIndex) {
+  return monthIndex === 0
+    ? 'Janeiro'
+    : monthIndex === 1
+    ? 'Fevereiro'
+    : monthIndex === 2
+    ? 'Março'
+    : monthIndex === 3
+    ? 'Abril'
+    : monthIndex === 4
+    ? 'Maio'
+    : monthIndex === 5
+    ? 'Junho'
+    : monthIndex === 6
+    ? 'Julho'
+    : monthIndex === 7
+    ? 'Agosto'
+    : monthIndex === 8
+    ? 'Setembro'
+    : monthIndex === 9
+    ? 'Outubro'
+    : monthIndex === 10
+    ? 'Novembro'
+    : monthIndex === 11
+    ? 'Dezembro'
+    : '';
+}
+
+function calculateFourteenthSalary() {
+  let profitDatabase = [];
+  for (let profit = 0; profit < 12; profit++) {
+    const profitEarned = parseFloat(
+      readline.question(`Qual o lucro obtido do mês de ${discoverMonthsOfTheYear(profit)}`),
+    );
+    profitDatabase.push(profitEarned);
+  }
+  const numberOfEmployees = parseFloat(readline.question('Qual a quantidade de funcionários? '));
+  let salaryDataBase = [];
+  for (let salary = 0; salary < numberOfEmployees; salary++) {
+    const currentSalary = parseFloat(readline.question(`Qual o salário do funcionário ${salary + 1}? `));
+    salaryDataBase.push(currentSalary);
+  }
+  const profitTarget = parseFloat(readline.question('Qual a meta anual da empresa? '));
+  const totalAnnualProfit = profitDatabase.reduce((acc, value) => acc + value, 0);
+  const fourteenthSalary = (profitDatabase.reduce((acc, value) => acc + value, 0) - profitTarget) / numberOfEmployees;
+  if (totalAnnualProfit > profitTarget) {
+    console.log(`O décimo quarto salário para cada funcionário será: ${fourteenthSalary.toFixed(2)}`);
+    return;
+  }
+  console.log(
+    `A meta não foi alcançada e o benefício não será pago.\nMeta Anual: ${profitTarget}\nLucro ano: ${totalAnnualProfit}`,
+  );
+}
+calculateFourteenthSalary();
