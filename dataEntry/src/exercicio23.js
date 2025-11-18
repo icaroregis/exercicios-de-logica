@@ -4,7 +4,7 @@
 
 // o lucro obtido em cada um dos 12 meses do ano;
 // a quantidade de funcionários;
-// o salário de cada funcionário;
+// o salário de cada funcionário; aqui não precisa pois não se faz nada com o salário
 // e a meta de lucro anual da empresa.
 
 // Ao final, o algoritmo deve verificar se a meta foi atingida e, caso positivo, calcular o valor do décimo quarto salário para cada funcionário.
@@ -45,16 +45,11 @@ function calculateFourteenthSalary() {
   let profitDatabase = [];
   for (let profit = 0; profit < 12; profit++) {
     const profitEarned = parseFloat(
-      readline.question(`Qual o lucro obtido do mês de ${discoverMonthsOfTheYear(profit)}`),
+      readline.question(`Qual o lucro obtido do mês de ${discoverMonthsOfTheYear(profit)}? `),
     );
     profitDatabase.push(profitEarned);
   }
   const numberOfEmployees = parseFloat(readline.question('Qual a quantidade de funcionários? '));
-  let salaryDataBase = [];
-  for (let salary = 0; salary < numberOfEmployees; salary++) {
-    const currentSalary = parseFloat(readline.question(`Qual o salário do funcionário ${salary + 1}? `));
-    salaryDataBase.push(currentSalary);
-  }
   const profitTarget = parseFloat(readline.question('Qual a meta anual da empresa? '));
   const totalAnnualProfit = profitDatabase.reduce((acc, value) => acc + value, 0);
   const fourteenthSalary = (profitDatabase.reduce((acc, value) => acc + value, 0) - profitTarget) / numberOfEmployees;
