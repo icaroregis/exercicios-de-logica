@@ -11,6 +11,7 @@ const imcMessages = [
 
 const patientInformation = {};
 const description = 'do paciente';
+const messages = 'Alérgico à';
 
 function validationLetter(world) {
   return world.trim() === 's';
@@ -40,8 +41,6 @@ patientInformation.seafoodAllergy = {
   lactose: validationLetter(lactose),
 };
 
-console.log(patientInformation.seafoodAllergy);
-
 function calcImc(imcList, infoDataPatient) {
   const imc = infoDataPatient.weight / (infoDataPatient.height * infoDataPatient.height);
   let status = '';
@@ -66,5 +65,17 @@ function calcImc(imcList, infoDataPatient) {
   }
   infoDataPatient.health = { imc, patientStatus: status };
   console.log(infoDataPatient.health.patientStatus);
+  console.log(
+    `\nDados do paciente:
+nome: ${infoDataPatient.name}
+idade: ${infoDataPatient.age}
+peso: ${infoDataPatient.weight}
+altura: ${infoDataPatient.height}
+${messages} frutos do mar: ${infoDataPatient.seafoodAllergy.seafood ? 'sim' : 'não'}
+${messages} abelhas: ${infoDataPatient.seafoodAllergy.bees ? 'sim' : 'não'}
+${messages} pelo de animais: ${infoDataPatient.seafoodAllergy.animalHair ? 'sim' : 'não'}
+${messages} pólen: ${infoDataPatient.seafoodAllergy.pollen ? 'sim' : 'não'}
+${messages} lactose: ${infoDataPatient.seafoodAllergy.lactose ? 'sim' : 'não'}`,
+  );
 }
 calcImc(imcMessages, patientInformation);
