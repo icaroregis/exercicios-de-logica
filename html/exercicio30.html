@@ -1,0 +1,37 @@
+Este é um exercício de visualização. Veja o código HTML e CSS. Observe como o main em parece ser mais poderoso (tem mais
+especificidade) do que o seletor em. Você consegue adivinhar a especificidade de ambos os seletores? Tente fazer você
+mesmo. Quando terminar, brinque com a calculadora de especificidade CSS
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Documento</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* especificidade: ?,?,? */
+      main em {
+        background-color: lightgray;
+      }
+
+      /* especificidade: ?,?,? */
+      em {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p>Realmente <em>não</em> importa se você concorda ou não com nossos termos.</p>
+    </main>
+    <footer>
+      <p>Obrigado por visitar nosso site! Não poderíamos ter feito isso <em>sem você</em>.</p>
+    </footer>
+  </body>
+</html>
