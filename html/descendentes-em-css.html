@@ -1,0 +1,23 @@
+1. .example01.example02 { ... } Significado: Seleciona apenas os elementos que possuem ambas as classes example01 e
+example02 ao mesmo tempo. Exemplo HTML:
+
+<div class="example01 example02">Selecionado</div>
+<div class="example01">Não selecionado</div>
+<div class="example02">Não selecionado</div>
+
+Só o primeiro </div> será afetado.
+
+2. .example01 .example02 { ... }
+Significado: Seleciona qualquer elemento com a classe example02 que esteja dentro de um elemento com a classe example01 (em qualquer nível de profundidade).
+Exemplo HTML:
+
+<div class="example01">
+  <div class="example02">Selecionado</div>
+</div>
+<div class="example02">Não selecionado</div>
+
+Só o <div class="example02"> que está dentro do <div class="example01"> será afetado.
+
+Resumindo:
+.example01.example02 → Elemento que tem as duas classes ao mesmo tempo.
+.example01 .example02 → Elemento com a classe example02 dentro de um elemento com a classe example01.
