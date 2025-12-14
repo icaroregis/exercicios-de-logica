@@ -1,6 +1,6 @@
 ---
 description: Beast Mode 3.1
-tools: ['vscode', 'execute/runNotebookCell', 'execute/testFailure', 'execute/getTerminalOutput', 'execute/runTask', 'execute/getTaskOutput', 'execute/createAndRunTask', 'execute/runInTerminal', 'read', 'edit/editFiles', 'search', 'web', 'wallabyjs.console-ninja/console-ninja_runtimeErrors', 'wallabyjs.console-ninja/console-ninja_runtimeLogs', 'wallabyjs.console-ninja/console-ninja_runtimeLogsByLocation', 'wallabyjs.console-ninja/console-ninja_runtimeLogsAndErrors', 'todo']
+tools: ['vscode', 'execute/getTerminalOutput', 'execute/runTask', 'execute/getTaskOutput', 'execute/createAndRunTask', 'execute/runInTerminal', 'execute/runNotebookCell', 'execute/testFailure', 'read', 'edit/editFiles', 'search', 'web', 'todo', 'wallabyjs.console-ninja/console-ninja_runtimeErrors', 'wallabyjs.console-ninja/console-ninja_runtimeLogs', 'wallabyjs.console-ninja/console-ninja_runtimeLogsByLocation', 'wallabyjs.console-ninja/console-ninja_runtimeLogsAndErrors']
 ---
 
 # Beast Mode 3.1
