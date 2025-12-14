@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Seletores #03</title>
+        <style>
+            body {
+                background-color: black;
+                color: white;
+            }
+
+            span + p {
+                background-color: chocolate;
+            }
+
+            div ~ p {
+                background-color: blueviolet;
+            }
+
+            .exemplo-filhos > p {
+                background-color: crimson;
+            }
+
+            #exemplo-descendentes p {
+                background-color: fuchsia;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Seletores de Irmãos Adjacentes</h2>
+        <div>
+            <span>Antes</span>
+            <p>Parágrafo #01</p>
+            <p>Parágrafo #02</p>
+        </div>
+
+        <h2>Seletores de Irmãos Gerais</h2>
+        <div>
+            <div>Antes</div>
+            <p>Parágrafo #01</p>
+            <p>Parágrafo #02</p>
+        </div>
+
+        <h2>Seletores de Filhos (Descendentes Diretos)</h2>
+        <div class="exemplo-filhos">
+            <p>Parágrafo #01</p>
+            <div>
+                <p>Parágrafo #02</p>
+            </div>
+        </div>
+        <h2>Seletores de Descendentes</h2>
+        <div id="exemplo-descendentes">
+            <p>Parágrafo #01</p>
+            <div>
+                <p>Parágrafo #02</p>
+            </div>
+        </div>
+    </body>
+</html>

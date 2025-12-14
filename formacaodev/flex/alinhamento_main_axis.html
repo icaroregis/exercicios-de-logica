@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Flexbox: Alinhamento Main Axis</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+
+      .flex-container {
+        border: solid crimson 5px;
+
+        display: flex;
+
+        flex-direction: row;
+
+        /* Alinhamento no MAIN AXIS */
+        justify-content: start;
+        justify-content: end;
+        justify-content: center;
+        justify-content: space-between;
+        justify-content: space-around;
+      }
+
+      .flex-container > div {
+        border: solid cyan 5px;
+        padding: 5px;
+        margin: 5px;
+      }
+
+      .flex-container.vertical {
+        margin-top: 20px;
+        height: 400px;
+
+        flex-direction: column;
+        /* justify-content: start;
+                justify-content: end;
+                justify-content: space-between;
+                justify-content: space-around; */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flexbox: Alinhamento Main Axis</h1>
+    <div class="flex-container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+    </div>
+
+    <div class="flex-container vertical">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+  </body>
+</html>

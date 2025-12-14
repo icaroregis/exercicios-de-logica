@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>Unidades CSS #04</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .externa {
+            position: relative;
+            background-color: orange;
+            height: 400px;
+            width: 400px;
+            padding: 50px;
+        }
+
+        .interna {
+            background-color: mediumvioletred;
+            height: 70%;
+            width: 70%;
+            position: static; /* conteúdo */
+            position: relative; /* conteúdo */
+            position: absolute; /* conteúdo + padding */
+            position: fixed; /* viewport */
+            bottom: 0px;
+            right: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="externa">
+        <div class="interna"></div>
+    </div>
+</body>
+
+</html>

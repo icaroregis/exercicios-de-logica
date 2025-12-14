@@ -1,0 +1,108 @@
+<html>
+  <head>
+    <title>Formulário</title>
+  </head>
+  <body>
+    <h2>Formulário</h2>
+    <form
+      action="exercicios.html"
+      method="get">
+      <div>
+        <div><label for="nome">Nome: </label></div>
+        <input
+          type="text"
+          name="nome"
+          id="nome"
+          required />
+      </div>
+      <div>
+        <div><label for="email">E-mail: </label></div>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          required />
+      </div>
+      <div>
+        <div><label for="senha">Senha:</label></div>
+        <input
+          type="password"
+          name="senha"
+          id="senha"
+          required />
+      </div>
+      <div>
+        <div><label for="bio">Fale sobre você:</label></div>
+        <textarea
+          name="bio"
+          id="bio"
+          cols="25"
+          rows="5"></textarea>
+      </div>
+      <div>
+        <div>Tipo de Residência:</div>
+        <input
+          type="radio"
+          name="residencia"
+          id="casa"
+          value="casa" />
+        <label for="casa">Casa</label>
+        <input
+          type="radio"
+          name="residencia"
+          id="apto"
+          value="apto" />
+        <label for="apto">Apartamento</label>
+        <input
+          type="radio"
+          name="residencia"
+          id="sitio"
+          value="sitio" />
+        <label for="sitio">Sitio</label>
+        <input
+          type="radio"
+          name="residencia"
+          id="fazenda"
+          value="fazenda" />
+        <label for="fazenda">Fazenda</label>
+      </div>
+      <div>
+        <select
+          name="plano"
+          id="plano">
+          <option value="">Selecione um Plano</option>
+          <option value="gratis">Plano Gratuito</option>
+          <option value="silver">Plano Siver - R$59,00</option>
+          <option value="gold">Plano Gold - R$89,00</option>
+        </select>
+      </div>
+      <div>
+        <div>Interesses:</div>
+        <input
+          type="checkbox"
+          name="tecnologia"
+          id="tecnologia" />
+        <label for="tecnologia">Tecnologia</label>
+        <input
+          type="checkbox"
+          name="esporte"
+          id="esporte" />
+        <label for="esporte">Esporte</label>
+        <input
+          type="checkbox"
+          name="cinema"
+          id="cinema" />
+        <label for="cinema">Cinema</label>
+        <input
+          type="checkbox"
+          name="musica"
+          id="musica" />
+        <label for="musica">Música</label>
+      </div>
+      <div>
+        <button>Salvar</button>
+        <button type="reset">Limpar</button>
+      </div>
+    </form>
+  </body>
+</html>

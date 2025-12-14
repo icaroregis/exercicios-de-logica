@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Seletores #02</title>
+        <style>
+            body {
+                background-color: black;
+                color: white;
+            }
+            
+            div:nth-child(even) {
+                background-color: rebeccapurple;
+            }
+
+            div:nth-child(odd) {
+                background-color: plum;
+            }
+
+            div:hover {
+                background-color: purple;
+            }
+
+            input:focus {
+                outline: none;
+                border: 2px solid greenyellow;
+                border-radius: 2px;
+            }
+
+            p::first-letter {
+                font-size: 50px;
+            }
+
+            p::first-line {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Seletores de Pseudo-Classes</h2>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <input type="text">
+
+        <h2>Seletores de Pseudo-Elementos</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mauris nunc, sagittis vitae odio vel, tempus tincidunt neque. Proin vehicula consectetur ex gravida aliquam. Aliquam sit amet tempus augue. Nunc mollis mauris vel augue vehicula eleifend. Vivamus at malesuada quam. Aliquam maximus leo felis, id placerat enim lobortis quis. Etiam iaculis vehicula dignissim. Curabitur sodales viverra est id posuere. Aenean ut quam vel arcu tincidunt venenatis. Aliquam lacus tellus, tempus sit amet ligula eget, auctor ultricies lectus. Vivamus quam velit, malesuada et euismod et, auctor non leo. Proin quis purus varius purus iaculis euismod nec vel metus. Duis eget libero porttitor lectus pulvinar tempus. Maecenas in nunc non diam condimentum rutrum. Fusce tempus nibh est, auctor hendrerit nisl maximus sed. Pellentesque at est neque.</p>
+        <p>Donec ac purus venenatis, fermentum dolor vitae, imperdiet turpis. Nulla facilisi. Cras imperdiet, risus nec commodo dictum, est nunc varius ex, nec consectetur lorem diam at urna. Proin aliquam metus et felis tempus pharetra. Fusce ut vulputate dui, quis mollis velit. Morbi sit amet interdum justo. Vivamus lobortis nisi at lorem dictum efficitur. Nullam eu enim a ex semper venenatis.</p>
+    </body>
+</html>

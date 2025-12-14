@@ -1,0 +1,37 @@
+<!-- https://picsum.photos/200/300 -->
+
+<h2>Imagens</h2>
+
+<div>
+  <!-- URL Absoluta -->
+  <img
+    src="https://picsum.photos/400"
+    alt="Foto Legal" />
+</div>
+
+<div>
+  <!-- URL Relativa -->
+  <img
+    src="../images/imagem_teste.jpeg"
+    alt="Foto Legal" />
+</div>
+
+<div>
+  <picture>
+    <source
+      srcset="https://picsum.photos/500"
+      media="(min-width: 600px)" />
+    <img
+      src="https://picsum.photos/200"
+      alt="Logo" />
+  </picture>
+</div>
+
+<div>
+  <picture>
+    <source srcset="https://picsum.photos/100" />
+    <img
+      src="https://picsu.photos/200"
+      alt="Teste de falha" />
+  </picture>
+</div>

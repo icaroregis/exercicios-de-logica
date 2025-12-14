@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Seletores #01</title>
+        <style>
+            body {
+                background-color: black;
+                color: white;
+            }
+
+            section, span, p {
+                display: inline-block;
+                height: 50px;
+                width: 50px;
+                margin: 10px;
+                background-color: crimson;
+                font-size: 40px;
+                text-align: center;
+            }
+
+            .circulo {
+                display: inline-block;
+                height: 50px;
+                width: 50px;
+                margin: 10px;
+                border-radius: 25px;
+                background-color: blueviolet;
+                text-align: center;
+                font-size: 40px;
+            }
+
+            .destaque {
+                border: 4px yellow solid;
+                color: yellow;
+                border-radius: 29px;
+            }
+
+            #botao-compra {
+                height: 30px;
+                width: 120px;
+                background-color: forestgreen;
+                color: white;
+                border: solid 1px white;
+                border-radius: 15px;
+                text-transform: uppercase;
+            }
+
+            [href], [deveSumir] {
+                display: none;
+            }
+
+            * {
+                border: 2px solid greenyellow;
+                margin: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Seletores de Elemento</h2>
+        <section>1</section>
+        <span>2</span>
+        <p>3</p>
+
+        <h2>Seletores de Classe</h2>
+        <div class="circulo">4</div>
+        <div class="circulo destaque">5</div>
+
+        <h2>Seletores de ID</h2>
+        <button id="botao-compra">Comprar</button>
+
+        <h2>Seletores de Atributo</h2>
+        <a href="https://www.google.com.br">Google</a>
+        <div deveSumir>Esconder #01</div>
+        <main deveSumir>Esconder #02</main>
+
+        <h2>Seletor Universal</h2>
+        <label>Será aplicado em todos os elementos da página!</label>
+    </body>
+</html>

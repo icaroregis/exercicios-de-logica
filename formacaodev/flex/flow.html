@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Flexbox: Direção & Quebra de Linha</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+
+      .flex-container {
+        border: solid crimson 5px;
+
+        display: flex;
+
+        /* Definir o MAIN AXIS */
+        flex-direction: row; /* Esse é o valor padrão (Web) */
+        flex-direction: column;
+        flex-direction: row-reverse;
+        flex-direction: column-reverse;
+        flex-direction: row;
+
+        width: 200px;
+
+        /* Definir a regra de Quebra de Linha */
+        flex-wrap: nowrap;
+        flex-wrap: wrap;
+        flex-wrap: wrap-reverse;
+
+        flex-flow: row-reverse wrap-reverse;
+      }
+
+      .flex-container > div {
+        border: solid cyan 5px;
+        padding: 5px;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flexbox: Direção & Quebra de Linha</h1>
+    <div class="flex-container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+    </div>
+  </body>
+</html>

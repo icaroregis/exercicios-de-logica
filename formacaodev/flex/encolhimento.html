@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Flexbox: Encolhimento</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+
+      .flex-container {
+        border: solid crimson 5px;
+
+        display: flex;
+        flex-direction: row;
+        /* width: 320px; */
+      }
+
+      .flex-container > div {
+        border: solid cyan 5px;
+        padding: 5px;
+        margin: 5px;
+        /* width: 100px; */
+        flex-basis: 100px;
+      }
+
+      .div-1,
+      .div-2,
+      .div-4 {
+        flex-shrink: 1;
+      }
+
+      .div-3 {
+        /* flex-shrink: 2; */
+        flex: 0 2;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Flexbox: Encolhimento</h1>
+
+    <div class="flex-container">
+      <div class="div-1">1</div>
+      <div class="div-2">2</div>
+      <div class="div-3">3</div>
+      <div class="div-4">4</div>
+    </div>
+  </body>
+</html>

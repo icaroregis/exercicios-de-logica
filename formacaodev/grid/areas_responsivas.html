@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Áreas Responsivas</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: black;
+        color: white;
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        grid-template-rows: 50px 1fr 50px;
+        grid-template-areas:
+          'cabecalho cabecalho'
+          'menu conteudo'
+          'menu rodape';
+
+        column-gap: 5px;
+        row-gap: 5px;
+      }
+
+      body > * {
+        border: solid cyan 3px;
+      }
+
+      header {
+        border-color: crimson;
+        grid-area: cabecalho;
+      }
+
+      nav {
+        border-color: chartreuse;
+        grid-area: menu;
+      }
+
+      main {
+        grid-area: conteudo;
+      }
+
+      footer {
+        border-color: deeppink;
+        grid-area: rodape;
+      }
+
+      @media all and (max-width: 900px) {
+        body {
+          grid-template-columns: 1fr;
+          grid-template-rows: 50px 50px 1fr 50px;
+          grid-template-areas:
+            'cabecalho'
+            'menu'
+            'conteudo'
+            'rodape';
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>Cabeçalho</header>
+    <nav>Menu</nav>
+    <main>Conteúdo</main>
+    <footer>Rodapé</footer>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Cod3r Menu</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background-color: #bbb;
+        font-family: 'Oswald', sans-serif;
+      }
+
+      .cabecalho {
+        background-color: #333;
+        color: white;
+        border-bottom: solid 3px #06caca;
+        height: 80px;
+        padding: 0px 10px;
+        font-size: 1.4rem;
+        font-weight: 200;
+
+        display: flex;
+        align-items: center;
+      }
+
+      .logo img {
+        height: 50px;
+      }
+
+      .menu {
+        flex-grow: 1;
+      }
+
+      .menu > ul {
+        display: flex;
+        list-style: none;
+      }
+
+      .menu a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        margin: 0px 5px;
+      }
+
+      .menu a:hover {
+        background-color: #06caca;
+        color: black;
+      }
+
+      .botao {
+        padding: 5px 30px;
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        border-radius: 25px;
+      }
+
+      .botao.destaque {
+        background-color: crimson;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="logo">
+        <a href="#inicio">
+          <img
+            src="http://files.cod3r.com.br/curso-web/logo.png"
+            alt="Logo" />
+        </a>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#cursos">Cursos</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="opcoes-autenticacao">
+        <a
+          class="botao"
+          href="#login"
+          >Login</a
+        >
+        <a
+          class="botao destaque"
+          href="#cadastro"
+          >Cadastro</a
+        >
+      </div>
+    </header>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Span #03</title>
+        <style>
+            body {
+                background-color: black;
+                color: white;
+                margin: 60px;
+            }
+
+            .grid > div {
+                border: solid cyan 4px;
+                padding: 5px;
+                margin: 2px;
+            }
+
+            .grid {
+                height: 100%;
+                display: grid;
+                grid-template-columns: 
+                    [col-inicio] 1fr 
+                    [col-meio-1 col-metade-1] 1fr 
+                    [col-meio-2 col-metade-2] 1fr [col-fim];
+                grid-template-rows: 1fr 1fr 1fr;
+            }
+
+            .d1 {
+                grid-column-start: col-inicio;
+                grid-column-end: col-meio-2;
+                grid-column-end: col-metade-2;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid">
+            <div class="d1">1</div>
+            <div class="d2">2</div>
+            <div class="d3">3</div>
+        </div>
+    </body>
+</html>

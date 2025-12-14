@@ -1,0 +1,14 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.par {
+  font-weight: bold;
+  background-color: crimson;
+  color: gold;
+}
+
+.destaque {
+  font-size: 30px;
+}
