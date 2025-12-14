@@ -1,6 +1,6 @@
 ---
 description: Beast Mode 3.1
-tools: ['edit/editFiles', 'runNotebooks', 'search', 'new', 'runCommands', 'runTasks', 'GitKraken/*', 'usages', 'vscodeAPI', 'problems', 'changes', 'testFailure', 'openSimpleBrowser', 'fetch', 'githubRepo', 'extensions']
+tools: ['vscode', 'execute/runNotebookCell', 'execute/testFailure', 'execute/getTerminalOutput', 'execute/runTask', 'execute/getTaskOutput', 'execute/createAndRunTask', 'execute/runInTerminal', 'read', 'edit/editFiles', 'search', 'web', 'wallabyjs.console-ninja/console-ninja_runtimeErrors', 'wallabyjs.console-ninja/console-ninja_runtimeLogs', 'wallabyjs.console-ninja/console-ninja_runtimeLogsByLocation', 'wallabyjs.console-ninja/console-ninja_runtimeLogsAndErrors', 'todo']
 ---
 
 # Beast Mode 3.1
