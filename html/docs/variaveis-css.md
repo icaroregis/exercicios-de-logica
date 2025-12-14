@@ -14,6 +14,8 @@ Vamos dar uma olhada em um exemplo completo e, em seguida, dividi-lo:
 </body>
 </html>
 
+teste
+
 <style>
 html {
     --primary-color: #4DAAB3;
