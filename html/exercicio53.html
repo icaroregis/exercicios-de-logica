@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Receita de massa</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      :root {
+        --background-color: #4a1928;
+      }
+
+      html {
+        --background-color: #382128;
+      }
+
+      body {
+        font-family: system-ui;
+        color: white;
+        background-color: var(--background-color);
+      }
+
+      .color-blind-friendly {
+        background-color: var(--background-color);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Receita de massa vegana</h1>
+      <p>Esta receita ensina como preparar uma deliciosa massa de macarrão</p>
+
+      <h2>Instruções</h2>
+      <p>Siga as instruções abaixo para uma deliciosa massa:</p>
+      <ol>
+        <li>Cozinhe o macarrão em água fervente.</li>
+        <li>Adicione lentamente o molho de tomate enquanto mexe.</li>
+        <li>Adicione sal e pimenta.</li>
+      </ol>
+    </main>
+    <footer>
+      <button id="toggle-mode">Liga/desliga cor amigável para daltônicos</button>
+    </footer>
+  </body>
+</html>
+<script>
+  const button = document.querySelector('#toggle-mode');
+  button.addEventListener('click', () => {
+    document.documentElement.classList.toggle('color-blind-friendly');
+  });
+</script>

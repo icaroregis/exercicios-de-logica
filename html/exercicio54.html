@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Receita de massa</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      :root {
+        --text-color: #3204ac;
+        --background-color: #ffffff;
+      }
+
+      .dark {
+        --text-color: #ffffff;
+        --background-color: #121212;
+      }
+
+      body {
+        font-family: system-ui;
+        background-color: var(--background-color);
+        color: var(--text-color);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Receita de massa vegana</h1>
+      <p>Esta receita ensina como preparar uma deliciosa massa de macarrão</p>
+
+      <h2>Instruções</h2>
+      <p>Siga as instruções abaixo para uma deliciosa massa:</p>
+      <ol>
+        <li>Cozinhe o macarrão em água fervente.</li>
+        <li>Adicione lentamente o molho de tomate enquanto mexe.</li>
+        <li>Adicione sal e pimenta.</li>
+      </ol>
+    </main>
+    <footer>
+      <button id="toggle-theme">Alternar tema</button>
+    </footer>
+  </body>
+</html>
+<script>
+  const button = document.querySelector('#toggle-theme');
+  button.addEventListener('click', () => {
+    document.documentElement.classList.toggle('dark');
+  });
+</script>
